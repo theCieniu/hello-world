@@ -1,4 +1,4 @@
-﻿@font-face {font-family: 'fontawesome'; 
+﻿@font-face {font-family: 'fontawesome';
 	src: url('webfonts/fa-regular-400.tff') format('tff');
 	}
 
@@ -19,7 +19,7 @@ color:var(--jasnyszary);
 	--mojzielony:#87B242;
 	--jasnyszary:#D9DAD4;
 	--slonecznypomarancz:##C89819;
-:ROOT oznacza cały dokument html, jeszcze szerzej niż body w sumie :) 
+:ROOT oznacza cały dokument html, jeszcze szerzej niż body w sumie :)
 */
 
 :root {
@@ -65,7 +65,7 @@ h2::after {
 
 
 
-h3 {	
+h3 {
 	background:var(--jasnyszary);
 	padding:10px;
 	margin-top:50px;
@@ -90,7 +90,7 @@ hr {	margin-top:50px;
 	color:var(--mojzielony);
 	background:var(--mojzielony);
 	border-color:var(--mojzielony);
-	
+
 		}
 
 footer {text-align:center;
@@ -128,10 +128,10 @@ footer {text-align:center;
 
 .profilephoto {border:2px;
 	border-color:black;
-	border-radius:50%; 
+	border-radius:50%;
 	widith:250px;
 	height:250px;
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.3); 
+	box-shadow: 3px 3px 30px rgba(0,0,0,0.3);
 	transition: transform 300ms;
 	position:absolute;
 	left:60%;
@@ -156,7 +156,7 @@ footer {text-align:center;
 	padding:3px;
 	padding-left:5px;
 	}
-				
+
 
 [type=textarea] {background-color:var(--mojzielony);
 }
@@ -194,7 +194,7 @@ EXAMPLE:
 	margin-left:40%;
 	margin-right:35%;
 	box-shadow: inset 0px 0px 10px 5px currentcolor, 0px 0px 30px rgba(0,0,0,0.8);
-}	
+}
 */
 
 
@@ -221,8 +221,8 @@ EXAMPLE:
 
 
 
-/* 	GRADIENT 
-Nie mam zielonego pojecia, dlaczego poniższy kod nie chce działać :( 
+/* 	GRADIENT
+Nie mam zielonego pojecia, dlaczego poniższy kod nie chce działać :(
 	background: linear-gradient(35deg, (hls 83, 75%, 75%), (hls 83, 25%, 75%)); background: linear-gradient(35deg, cyan, yellow, magenta, cyan);
 cyan 0px,
 	yellow 20px,
@@ -236,13 +236,13 @@ cyan 0px,
 	margin:auto;
 	height:100px;
 	background: repeating-linear-gradient(
-	45deg, 
+	45deg,
 	yellow 0px,
 
       cyan 40px,
 
       magenta 80px,
- 
+
      yellow 110px
 	);
 	border-radius:10px;
@@ -258,7 +258,7 @@ cyan 0px,
 	margin:auto;
 	height:100px;
 	background: repeating-linear-gradient(
-	90deg, 
+	90deg,
 	black 0px,
 	black 20px,
 	white 20px,
@@ -267,7 +267,7 @@ cyan 0px,
 	border-radius:10px;
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.3);
 	}
-	
+
 .gradientbox2:hover {
 	transform:skewX(45deg);
 	}
@@ -277,28 +277,28 @@ cyan 0px,
 /* ========== HEART ========== */
 
 
-.heartp {	
+.heartp {
 	position:relative;
 	padding:20px;
 		}
 
 .heart {
-  
+
 position: absolute;
-  
+
 
 margin: auto;
-margin-top:10px;  
+margin-top:10px;
 right: 0;
-  
+
 left: 0;
-  
+
 background-color: var(--mojzielony);
-  
+
 height: 50px;
-  
+
 width: 50px;
-  
+
 transform: rotate(-45deg);
 
 }
@@ -306,19 +306,19 @@ transform: rotate(-45deg);
 
 
 .heart::after {
-  
+
 background-color: cyan;
-  
+
 content: "";
-  
+
 border-radius: 50%;
-  
+
 position: absolute;
-  
+
 width: 50px;
-  
+
 height: 50px;
-  
+
 top: 0px;
   left: 25px;
 
@@ -326,21 +326,21 @@ top: 0px;
 
 
 .heart::before {
-  
+
 content: '';
-  
+
 background-color: green;
-  
+
 border-radius: 50%;
-  
+
 position: absolute;
-  
+
 width: 50px;
-  
+
 height: 50px;
-  
+
 top: -25px;
-  
+
 left: 0px;
 
 }
@@ -353,49 +353,49 @@ left: 0px;
 /* ========== GERALT ========== */
 
 
-.geraltp {	
+.geraltp {
 	position:relative;
 	padding-top:100px;
-	
+
 	}
 
 .geralt {
-  
+
 position: absolute;
-  
+
 margin: auto;
 
-margin-top:10px;  
+margin-top:10px;
 right: 0;
-  
+
 left: 0;
-  
+
 background-color: red;
-  
+
 height: 50px;
-  
+
 width: 100px;
-  
+
 border-radius: 25%;
- 
-transform:rotate(90deg); 
+
+transform:rotate(90deg);
 }
 
 
 .geralt::after {
-  
+
 background-color: pink;
-  
+
 content: "";
-  
+
 border-radius: 50%;
-  
+
 position: absolute;
-  
+
 width: 50px;
-  
+
 height: 50px;
-  
+
 top: 20px;
   right: 70px;
 
@@ -403,21 +403,21 @@ top: 20px;
 
 
 .geralt::before {
-  
+
 content: '';
-  
+
 background-color: yellow;
-  
+
 border-radius: 50%;
-  
+
 position: absolute;
-  
+
 width: 50px;
-  
+
 height: 50px;
-  
+
 top: -20px;
-  
+
 left: -20px;
 
 }
@@ -438,27 +438,20 @@ left: -20px;
 	margin-left:auto;
 	margin-right:auto;
 right: 0;
-  
+
 left: 0;
 	}
 
 
 
+/* ======= A LINK DEFAULT CSS ===========
+<!-- a:link, a:visited {
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a:link:active, a:visited:active {
+  color: (internal value);
+}
+========================================= */
