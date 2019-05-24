@@ -1,14 +1,17 @@
-﻿@font-face {font-family: 'fontawesome';
-	src: url('webfonts/fa-regular-400.tff') format('tff');
-	}
+@font-face {
+  font-family: 'fontawesome';
+  src: url('webfonts/fa-regular-400.tff') format('tff');
+}
 
-@font-face {font-family:aleo;
-	src: url('webfonts/aleo-regular-webfont.tff') format('tff');
-	}
+@font-face {
+  font-family: aleo;
+  src: url('webfonts/aleo-regular-webfont.tff') format('tff');
+}
 
-@font-face {font-family:myra;
-	src: url('webfonts/myra-4f-caps-regular.tff') format('tff');
-	 }
+@font-face {
+  font-family: myra;
+  src: url('webfonts/myra-4f-caps-regular.tff') format('tff');
+}
 
 /* PALETA KOLORÓW - variable */
 /* dodaj:
@@ -21,165 +24,152 @@ color:var(--jasnyszary);
 	--slonecznypomarancz:##C89819;
 :ROOT oznacza cały dokument html, jeszcze szerzej niż body w sumie :)
 */
-
 :root {
-	--mojzielony:#87B242;
-	--jasnyszary:#D9DAD4;
+  --mojzielony: #87B242;
+  --jasnyszary: #D9DAD4;
 }
-
 
 body {
-	font-family:aleo;
-	margin-left:20%;
-	margin-right:20%;
+  font-family: aleo;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-h1 {font-family:harrlems,amatic,myra,fantasy;
-	text-align:center;
-	color:white;
-	background-color:var(--mojzielony);
-	margin-top:-10px;
-	margin-left:-50%;
-	margin-right:-50%;
-	margin-bottom:70px;
-	padding:15px;
-	padding-bottom:8px;
-	font-size:300%;
-
+h1 {
+  font-family: harrlems, amatic, myra, fantasy;
+  text-align: center;
+  color: white;
+  background-color: var(--mojzielony);
+  margin-top: -10px;
+  margin-left: -50%;
+  margin-right: -50%;
+  margin-bottom: 70px;
+  padding: 15px;
+  padding-bottom: 8px;
+  font-size: 300%;
 }
 
-
-
-h2 {	font-family:harrlems, lobster;
-	color:var(--mojzielony);
-	padding-top:30px;
-	}
+h2 {
+  font-family: harrlems, lobster;
+  color: var(--mojzielony);
+  padding-top: 30px;
+}
 
 h2::after {
-	content: '';
-	border: 1px solid;
-	border-color:var(--mojzielony);
-	display:block;
-	}
-
-
-
+  content: '';
+  border: 1px solid;
+  border-color: var(--mojzielony);
+  display: block;
+}
 
 h3 {
-	background:var(--jasnyszary);
-	padding:10px;
-	margin-top:50px;
-	margin-bottom:20px;
-	box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
-	}
+  background: var(--jasnyszary);
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
 
+p {
+  line-height: 32px;
+}
 
-p {line-height:32px;
-	}
+ol {
+  line-height: 32px;
+}
 
-ol {line-height:32px;
-	}
+ul {
+  line-height: 32px;
+}
 
-ul {line-height:32px;
-	}
+hr {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--mojzielony);
+  background: var(--mojzielony);
+  border-color: var(--mojzielony);
+}
 
-
-hr {	margin-top:50px;
-	margin-left:50px;
-	margin-right:50px;
-	color:var(--mojzielony);
-	background:var(--mojzielony);
-	border-color:var(--mojzielony);
-
-		}
-
-footer {text-align:center;
-	font-size:70%;
-	background-color:var(--mojzielony);
-	padding:10px;
-	margin-top:100px;
-	margin-left:-50%;
-	margin-right:-50%;
-	margin-bottom:-10px;
-	}
-
-
+footer {
+  text-align: center;
+  font-size: 70%;
+  background-color: var(--mojzielony);
+  padding: 10px;
+  margin-top: 100px;
+  margin-left: -50%;
+  margin-right: -50%;
+  margin-bottom: -10px;
+}
 
 .about {
-	position:relative;
-	background-color:var(--jasnyszary);
-	box-shadow: inset -3px -3px 15px rgba(0,0,0,0.1);
-	}
+  position: relative;
+  background-color: var(--jasnyszary);
+  box-shadow: inset -3px -3px 15px rgba(0, 0, 0, 0.1);
+}
 
 .about2 {
-	font-family:harrlems, lobster;
-	color:var(--mojzielony);
-	padding-top:30px;margin-left:30px;
-	margin-bottom:10px;
-	color:black;
-	font-size:150%;
-			}
+  font-family: harrlems, lobster;
+  color: var(--mojzielony);
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 150%;
+}
 
 .about3 {
-	padding-left: 50 px;
-	padding-bottom:25px;
-	}
+  padding-left: 50 px;
+  padding-bottom: 25px;
+}
 
-
-.profilephoto {border:2px;
-	border-color:black;
-	border-radius:50%;
-	widith:250px;
-	height:250px;
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.3);
-	transition: transform 300ms;
-	position:absolute;
-	left:60%;
-	bottom:15%;
-		}
+.profilephoto {
+  border: 2px;
+  border-color: black;
+  border-radius: 50%;
+  widith: 250px;
+  height: 250px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 300ms;
+  position: absolute;
+  left: 60%;
+  bottom: 15%;
+}
 
 .profilephoto:hover {
-		box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
-		transform:scale(3) rotate(-5deg);
-	}
-
-
-.gray-background-form {background-color:var(--jasnyszary);
-		padding:30px;
-		padding-left:50px;
-		margin-right:15%;
-		margin-left:15%
-		}
-
-.code {background-color:var(--jasnyszary);
-	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
-	padding:3px;
-	padding-left:5px;
-	}
-
-
-[type=textarea] {background-color:var(--mojzielony);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+  transform: scale(3) rotate(-5deg);
 }
 
+.gray-background-form {
+  background-color: var(--jasnyszary);
+  padding: 30px;
+  padding-left: 50px;
+  margin-right: 15%;
+  margin-left: 15%
+}
+
+.code {
+  background-color: var(--jasnyszary);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 3px;
+  padding-left: 5px;
+}
+
+[type=textarea] {
+  background-color: var(--mojzielony);
+}
 
 [type=submit] {
-	font-family:aleo;
-	padding:10px;
-	background-color:var(--mojzielony);
-	font-size:100%;
-	border:2px,white;
+  font-family: aleo;
+  padding: 10px;
+  background-color: var(--mojzielony);
+  font-size: 100%;
+  border: 2px, white;
 }
 
-
-
 /* ============ CODE PLAYGROUND ========= */
-
-
-
-
-
 /* ======== RAINBOW BOX ==========*/
-
 /* BOX-SHADOWS: inset OŚ-Xpx OŚ-Ypx blur spread kolor-z-transparentnością;
 spread-od którego momentu zaczyna się blur
 inset jest opcjonalnie, kieruje cień do środka boxu
@@ -196,30 +186,26 @@ EXAMPLE:
 	box-shadow: inset 0px 0px 10px 5px currentcolor, 0px 0px 30px rgba(0,0,0,0.8);
 }
 */
+.rainbow-box {
+  background: white;
+  text-align: center;
+  align: center;
+  border-radius: 50%;
+  color: var(--mojzielony);
+  padding: 50px;
+  margin: 10% 35% 5% 40%;
+  widith: 30px;
+  height: 60px;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.8),
+    0px -30px 120px 10px rgba(255, 255, 0, 0.5),
+    30px 0px 120px 10px rgba(0, 255, 0, 0.4),
+    0px 30px 120px 10px rgba(0, 0, 255, 0.8),
+    -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
+}
 
-
-.rainbow-box {background:white;
-	text-align:center;
-	align:center;
-	border-radius:50%;
-	color:var(--mojzielony);
-	padding:50px;
-	margin:10% 35% 5% 40%;
-	widith:30px;
-	height:60px;
-	box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.8),
-		0px -30px 120px 10px rgba(255,255,0,0.5),
-		30px 0px 120px 10px rgba(0,255,0,0.4),
-		0px 30px 120px 10px rgba(0,0,255,0.8),
-		-30px 0px 120px 10px rgba(255,0,0,0.8);
-	}
-
-
-
-.icon {font-family: 'fontawesome';
-		}
-
-
+.icon {
+  font-family: 'fontawesome';
+}
 
 /* 	GRADIENT
 Nie mam zielonego pojecia, dlaczego poniższy kod nie chce działać :(
@@ -229,220 +215,119 @@ cyan 0px,
 	magenta 20px,
 	cyan 40px,
 */
-
-
 .gradientbox1 {
-	widith:80%;
-	margin:auto;
-	height:100px;
-	background: repeating-linear-gradient(
-	45deg,
-	yellow 0px,
-
-      cyan 40px,
-
-      magenta 80px,
-
-     yellow 110px
-	);
-	border-radius:10px;
-	box-shadow: 1px 1px 20px rgba(0,0,0,0.3);
-	}
+  widith: 80%;
+  margin: auto;
+  height: 100px;
+  background: repeating-linear-gradient(45deg,
+    yellow 0px,
+    cyan 40px,
+    magenta 80px,
+    yellow 110px);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
 
 .gradientbox1:hover {
-	transform:skewY(-5deg);
-	}
+  transform: skewY(-5deg);
+}
 
-
-.gradientbox2 {widith:80%;
-	margin:auto;
-	height:100px;
-	background: repeating-linear-gradient(
-	90deg,
-	black 0px,
-	black 20px,
-	white 20px,
-	white 40px
-		);
-	border-radius:10px;
-	box-shadow: 1px 1px 20px rgba(0,0,0,0.3);
-	}
+.gradientbox2 {
+  widith: 80%;
+  margin: auto;
+  height: 100px;
+  background: repeating-linear-gradient(90deg,
+    black 0px,
+    black 20px,
+    white 20px,
+    white 40px);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
 
 .gradientbox2:hover {
-	transform:skewX(45deg);
-	}
-
-
+  transform: skewX(45deg);
+}
 
 /* ========== HEART ========== */
-
-
 .heartp {
-	position:relative;
-	padding:20px;
-		}
+  position: relative;
+  padding: 20px;
+}
 
 .heart {
-
-position: absolute;
-
-
-margin: auto;
-margin-top:10px;
-right: 0;
-
-left: 0;
-
-background-color: var(--mojzielony);
-
-height: 50px;
-
-width: 50px;
-
-transform: rotate(-45deg);
-
+  position: absolute;
+  margin: auto;
+  margin-top: 10px;
+  right: 0;
+  left: 0;
+  background-color: var(--mojzielony);
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
 }
-
-
 
 .heart::after {
-
-background-color: cyan;
-
-content: "";
-
-border-radius: 50%;
-
-position: absolute;
-
-width: 50px;
-
-height: 50px;
-
-top: 0px;
+  background-color: cyan;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
   left: 25px;
-
 }
 
-
 .heart::before {
-
-content: '';
-
-background-color: green;
-
-border-radius: 50%;
-
-position: absolute;
-
-width: 50px;
-
-height: 50px;
-
-top: -25px;
-
-left: 0px;
-
+  content: '';
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
 }
 
 /* heart code from free code camp lesson, try to practice it later from scratch */
 
-
-
-
-/* ========== GERALT ========== */
-
-
-.geraltp {
-	position:relative;
-	padding-top:100px;
-
-	}
-
-.geralt {
-
-position: absolute;
-
-margin: auto;
-
-margin-top:10px;
-right: 0;
-
-left: 0;
-
-background-color: red;
-
-height: 50px;
-
-width: 100px;
-
-border-radius: 25%;
-
-transform:rotate(90deg);
-}
-
-
-.geralt::after {
-
-background-color: pink;
-
-content: "";
-
-border-radius: 50%;
-
-position: absolute;
-
-width: 50px;
-
-height: 50px;
-
-top: 20px;
-  right: 70px;
-
-}
-
-
-.geralt::before {
-
-content: '';
-
-background-color: yellow;
-
-border-radius: 50%;
-
-position: absolute;
-
-width: 50px;
-
-height: 50px;
-
-top: -20px;
-
-left: -20px;
-
-}
-
-
-
 /* ========= CAT BLINKING ======== */
-
-
-
 .catblinking {
-	background-color:black;
-	position:relative;
-	border-radius:50%;
-	align:center;
-	widith:100px;
-	height:100px;
-	margin-left:auto;
-	margin-right:auto;
-right: 0;
+  background-color: black;
+  position: relative;
+  border-radius: 50%;
+  align: center;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
 
-left: 0;
-	}
+/* ========= JAVA SCRIPT IN HALF AN HOUR ======== */
+button {
+  margin-left: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  background-color: navy;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
 
+button:hover {
+  background-color: grey;
+}
 
+.highlight {
+  background-color: yellow;
+}
+
+#list-items li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0.5em;
+}
 
 /* ======= A LINK DEFAULT CSS ===========
 <!-- a:link, a:visited {

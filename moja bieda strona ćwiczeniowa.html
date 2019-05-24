@@ -1,5 +1,7 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html>
+
 <head lang="en">
 
 	<!-- meta - info o ustawieniach strony dla przeglądarki;
@@ -7,221 +9,231 @@
 
 	<meta charset="UTF-8" />
 
-<meta name="description" content="HTML i CSS practice page - example of coding abilites and learning process by Paulina Weiher">
+	<meta name="description" content="HTML i CSS practice page - example of coding abilites and learning process by Paulina Weiher">
 
-<link rel="stylesheet" href="strona-notatki-style.css">
-<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<link rel="stylesheet" href="strona-notatki-style.css">
+	<link rel='icon' href='favicon.ico' type='image/x-icon' />
 
 
-<!--- skopiowany skądśtam, przeanalizować
+	<!--- skopiowany skądśtam, przeanalizować
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
 
 
 
 
-<!-- ============== CSS =====================-->
-<style>
+	<!-- ============== CSS =====================-->
+	<style>
 
 	</style>
-	</head>
+</head>
 
 <title>
 	Paulina's notes
-	</title>
+</title>
 
 <body>
 
-<h1>Paulina's notes</h1>
+	<h1>Paulina's notes</h1>
 
 
 
 
-<p><code class="code">Hello World!</code> Hi! This page is my html and css notepad. I've wrote it from scratch and everytime I learn new feature I add here few lines of code to test and practise. Due to that there wasn't any plan or particular design of this page so it may look chaotic. I would even say that few elements are painfully ugly. But I'm ok with that because the main function of this paige is to help me freely practice coding on daily basis. It's not my portfolio, it's my code playground and safe space for mistakes and exploring. </p>
-<br>
+	<p><code class="code">Hello World!</code> Hi! This page is my html and css notepad. I've wrote it from scratch and everytime I learn new feature I add here few lines of code to test and practise. Due to that there wasn't any plan or particular
+		design of this page so it may look chaotic. I would even say that few elements are painfully ugly. But I'm ok with that because the main function of this paige is to help me freely practice coding on daily basis. It's not my portfolio, it's my
+		code playground and safe space for mistakes and exploring. </p>
+	<br>
 
 
-<section class="about">
-<p class="about2">About:</p>
-<p>
-<ol type="1" class="about3">
-	<li>Paulina Weiher from Gdańsk, Poland</li>
-	<li>Biotechnologis specialized in virusology</li>
-	<li>Nail art blogger at <a href="https://www.cienistosc.pl/">cienistosc.pl</a></li>
-	<li>Social media ninja*</li>
-	<li>Front-end developer/designer*</li><br>
-	*wannabe
-</ol>
+	<section class="about">
+		<p class="about2">About:</p>
+		<p>
+			<ol type="1" class="about3">
+				<li>Paulina Weiher from Gdańsk, Poland</li>
+				<li>Biotechnologis specialized in virusology</li>
+				<li>Nail art blogger at <a href="https://www.cienistosc.pl/">cienistosc.pl</a></li>
+				<li>Social media ninja*</li>
+				<li>Front-end developer/designer*</li><br>
+				*wannabe
+			</ol>
 
-</p>
-<p>
-<img class="profilephoto" src="img/paulina_weiher_profilowe.jpg" align="center" alt="zdjęcie profilowe paulina weiher"/>
+		</p>
+		<p>
+			<img class="profilephoto" src="img/paulina_weiher_profilowe.jpg" align="center" alt="zdjęcie profilowe paulina weiher" />
+		</p>
+	</section>
+
+
+
+
+	<h2>My hobby</h2>
+	<p>
+		<ul type="square">
+			<li>Learning new things</li>
+			<li>Nail art</li>
+			<li>Reading books especially fantasy</li>
+			<li>Drawing with markers and pencils, painting with watercolours</li>
+			<li>Cooking for my family and friends</li>
+			<li>Reggaeton dance</li>
+			<li>Teaching tricks my cats and hens</li>
+			<li>Watching Netflix with my husband</li>
+		</ul>
 	</p>
-</section>
+
+	<h2>What are my future plans?</h2>
+	<p>My dream is to learn coding and find a job at IT. I worked as a biotechnologis but I need a change and I've felt in love with coding. Now I'm focused on learning new skills and it's an amazing journey!</p>
 
 
 
+	<h2>Send me a message!</h2>
 
-<h2>My hobby</h2>
-<p>
-<ul type="square">
-	<li>Learning new things</li>
-	<li>Nail art</li>
-	<li>Reading books especially fantasy</li>
-	<li>Drawing with markers and pencils, painting with watercolours</li>
-	<li>Cooking for my family and friends</li>
-	<li>Reggaeton dance</li>
-	<li>Teaching tricks my cats and hens</li>
-	<li>Watching Netflix with my husband</li>
-	</ul>
-</p>
+	<p>Tbh I don't know yet how to make this form sending data anywhere, but at least I've practised writhing and styling it.</p>
+	<p>
 
-<h2>What are my future plans?</h2>
-<p>My dream is to learn coding and find a job at IT. I worked as a biotechnologis but I need a change and I've felt in love with coding. Now I'm focused on learning new skills and it's an amazing journey!</p>
+		<!---<form action="tu wpisz url gdzie przesłać dane" -->
 
+		<form class="gray-background-form" action="">
+
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" placeholder="Your name"><br>
+			<br>
+
+			<label for="mail">E-mail:<br>
+				<input type="text" id="mail" placeholder="name@mail.com" required></label><br>
+			<br>
 
 
-<h2>Send me a message!</h2>
+			<fieldset>
+				<legend>Type of message:</legend>
+				<input type="radio" id="compliments" name="messagetype" value="compliments" checked>
+				<label for="compliments">Compliments</label>
+				<br>
 
-<p>Tbh I don't know yet how to make this form sending data anywhere, but at least I've practised writhing and styling it.</p>
-<p>
+				<input type="radio" id="radiotype2" name="messagetype" value="helpful-tips">
+				<label for="radiotype2">Helpful tips</label>
+			</fieldset>
 
-<!---<form action="tu wpisz url gdzie przesłać dane" -->
+			<br>
+			<label for="meetdate">Prefered meeting date:</label><br>
+			<input id="meetdate" name="date" type="date">
+			<br>
+			<br>
+			<label for="message">Message</label><br>
+			<input type="textarea" rows="50" cols="10" id="message" placeholder="Write me a message" required><br>
 
-<form class="gray-background-form" action="">
-
-<label for="name">Name:</label><br>
-<input type="text" id="name" placeholder="Your name"><br>
-<br>
-
-<label for="mail">E-mail:<br>
-<input type="text" id="mail" placeholder="name@mail.com" required></label><br>
-<br>
-
-
-<fieldset>
-<legend>Type of message:</legend>
-	<input type="radio" id="compliments" name="messagetype" value="compliments" checked>
-<label for="compliments">Compliments</label>
-<br>
-
-	<input type="radio" id="radiotype2" name="messagetype" value="helpful-tips">
-<label for="radiotype2">Helpful tips</label>
-</fieldset>
-
-<br>
-<label for="meetdate">Prefered meeting date:</label><br>
-<input id="meetdate" name="date" type="date">
-<br>
-<br>
-<label for="message">Message</label><br>
-<input type="textarea" rows="50" cols="10" id="message" placeholder="Write me a message" required><br>
-
-<br>
-<label for="checkbox1"><input id="checkbox1" type="checkbox" name="rodo" required>I agree that Paulina Weiher may collect, use and disclose my personal data which I have provided in this form, for providing marketing materials.</label>
+			<br>
+			<label for="checkbox1"><input id="checkbox1" type="checkbox" name="rodo" required>I agree that Paulina Weiher may collect, use and disclose my personal data which I have provided in this form, for providing marketing materials.</label>
 
 
 
-<!-- I've heard that every input radiobutton/checkbox has to be nested within its own label element, but I don't know, I must study it more
+			<!-- I've heard that every input radiobutton/checkbox has to be nested within its own label element, but I don't know, I must study it more
 --><br>
-<br>
-<button type="submit" padding="10px">Send!</button>
-</form>
+			<br>
+			<button type="submit" padding="10px">Send!</button>
+		</form>
 
 
-</p>
-</form>
-<br>
-<br>
-<br>
-
-
-
-
-<h1 class="sillyh1">Silly code playground</h1>
-<hr>
-
-
-<!-- I don't know why this doesn't work -->
-<p>
-<a type="icon" class="icon" href="https://www.cienistosc.pl/"><i class="fa fa-blogger">fa-blogger</i></a>
-
-<a class="icon" href="https://www.youtube.com/channel/UCygCHGzAuqq3Q6m-T7w5esA?"><i class="fa fa-youtube"></i></a>
-
-<a class="icon" href="https://www.facebook.com/cienistosc/"><i class="fa fa-facebook"></i></a>
-
-
-
-<a class="icon" href="https://www.instagram.com/thecieniu/"><i class="fa fa-instagram"></i></a>
-
-<a class="icon" href="https://www.instagram.com/thecieniu.nails/"><i class="fa fa-instagram" color="gray"></i></a>
-
-<a class="icon" href="https://pl.pinterest.com/thecieniu/"><i class="fa fa-pinterest"></i></a>
-
-
-
-<a class="icon" href="https://plus.google.com/u/0/+theCieniu"><i class="fa fa-google-plus"></i></a>
-
-<a class="icon" href="https://twitter.com/theCieniu"><i class="fa fa-twitter"></i></a>
-
-<a class="icon" href="http://www.cienistosc.pl/feed"><i class="fa fa-rss"></i></a>
-
-</p>
-
-
-<br>
-<h3>Excercise 1. Box-shadow</h3>
-<p class="rainbow-box">@theCieniu</p>
-
-
-<br>
-<h3>Excercise 2. Gradients</h3>
-<br>
-
-<div class="gradientbox1">
-</div>
-
-<br>
-
-<div class="gradientbox2">
-</div>
-
-<br>
-
-
-
-<h3>Excercise 3. CSS heart ♥</h3>
-
-<p class="heartp">
-<div class="heart">
-</div>
-</p>
-
-
-
-<p class="geraltp">
-<div class="geralt">
-	</div>
 	</p>
-<br>
-<br>
-<br>
-<br>
-<h3>Excercise 4. CSS Animation</h3>
-
-<p class="catblinking">
-<div class="catblink">
-</div>
-</p>
+	</form>
+	<br>
+	<br>
+	<br>
 
 
 
-<h3>Excercise 5. </h3>
+
+	<h1 class="sillyh1">Silly code playground</h1>
+	<hr>
 
 
-<footer>
-I don't serve any cookies, I'm on a diet. Paulina Weiher 2019
-</footer>
+	<!-- I don't know why this doesn't work -->
+	<p>
+		<a type="icon" class="icon" href="https://www.cienistosc.pl/"><i class="fa fa-blogger">fa-blogger</i></a>
+
+		<a class="icon" href="https://www.youtube.com/channel/UCygCHGzAuqq3Q6m-T7w5esA?"><i class="fa fa-youtube"></i></a>
+
+		<a class="icon" href="https://www.facebook.com/cienistosc/"><i class="fa fa-facebook"></i></a>
 
 
+
+		<a class="icon" href="https://www.instagram.com/thecieniu/"><i class="fa fa-instagram"></i></a>
+
+		<a class="icon" href="https://www.instagram.com/thecieniu.nails/"><i class="fa fa-instagram" color="gray"></i></a>
+
+		<a class="icon" href="https://pl.pinterest.com/thecieniu/"><i class="fa fa-pinterest"></i></a>
+
+
+
+		<a class="icon" href="https://plus.google.com/u/0/+theCieniu"><i class="fa fa-google-plus"></i></a>
+
+		<a class="icon" href="https://twitter.com/theCieniu"><i class="fa fa-twitter"></i></a>
+
+		<a class="icon" href="http://www.cienistosc.pl/feed"><i class="fa fa-rss"></i></a>
+
+	</p>
+
+
+	<br>
+	<h2>Excercise 1. Box-shadow</h2>
+	<p class="rainbow-box">@theCieniu</p>
+
+
+	<br>
+	<h2>Excercise 2. Gradients</h2>
+	<br>
+
+	<div class="gradientbox1">
+	</div>
+
+	<br>
+
+	<div class="gradientbox2">
+	</div>
+
+	<br>
+
+
+
+	<h2>Excercise 3. CSS heart ♥</h2>
+
+	<p class="heartp">
+		<div class="heart">
+		</div>
+	</p>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Excercise 4. CSS Animation</h2>
+
+	<p class="catblinking">
+		<div class="catblink">
+		</div>
+	</p>
+
+
+
+	<h2>Excercise 5. JavaScript in Half an Hour </h2>
+	<p>Youtube tutorial <a href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s" target="_blank" rel="nofollow">"JavaScript in Half an Hour (without jQuery!)"</a> by <a href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
+		  target="_blank" rel="nofollow">LearnWebCode</a>.</p>
+
+	<h3 id="headline">Click a list item to replace this text.</h3>
+	<button id="list-button">Add new item</button>
+	<ul id="list-items">
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
+
+
+	<footer>
+		I don't serve any cookies, I'm on a diet. Paulina Weiher 2019
+	</footer>
+
+	<script src="javascript-fun.js">
+      </script>
 </body>
+
 </html>
