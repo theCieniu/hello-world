@@ -1,5 +1,7 @@
 document.title = "Draft";
 
+
+/* ========= JAVA SCRIPT IN 30 MINUTES TUTORIAL ============= */
 var listItems = document.getElementById('list-items').getElementsByTagName('li')
 var theButton = document.getElementById('list-button')
 var theList = document.getElementById('list-items')
@@ -31,8 +33,6 @@ function newHeadline(l) {
   }
 }
 
-
-
 /*
 function activateItem() {
   theHeadline.innerHTML = this.innerHTML;
@@ -49,9 +49,55 @@ for (i = 0; i < listItems.length; i++) {
 /*function activateItem() {
   alert("Click detected!")
 }
-
-
 for (i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener("click", newHeadline)
 }
 */
+
+
+
+
+/* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
+var name = "Anonymaus"
+function hello(name, favFood) {
+  alert("Hello there, I'm " + name + " and my favourite food is "+ favFood + " ! <O(/\)_")
+}
+document.addEventListener("scroll", hello(name, "cheese"))
+
+function tripleMe(a) {
+  return 3 * a
+}
+
+alert(tripleMe(16))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is the end */
