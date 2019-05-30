@@ -60,7 +60,7 @@ for (i = 0; i < listItems.length; i++) {
 /* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
 var name = "Anonymaus"
 function hello(name, favFood) {
-  alert("Hello there, I'm " + name + " and my favourite food is "+ favFood + " ! <O(/\)_")
+  //alert("Hello there, I'm " + name + " and my favourite food is "+ favFood + " ! <O(/\)_")
 }
 document.addEventListener("scroll", hello(name, "cheese"))
 
@@ -68,7 +68,7 @@ function tripleMe(a) {
   return 3 * a
 }
 
-alert(tripleMe(16))
+//alert(tripleMe(16))
 
 
 
