@@ -33,47 +33,11 @@ function newHeadline(l) {
   }
 }
 
-/*
-function activateItem() {
-  theHeadline.innerHTML = this.innerHTML;
-  for (i = 0; i < listItems.length; i++) {
-    listItems[i].classList.remove("highlight");
-  }
-  this.classList.add("highlight")
-}
-
-for (i = 0; i < listItems.length; i++) {
-  listItems[i].addEventListener("click", activateItem)
-}*/
-
-/*function activateItem() {
-  alert("Click detected!")
-}
-for (i = 0; i < listItems.length; i++) {
-  listItems[i].addEventListener("click", newHeadline)
-}
-*/
-
 
 
 
 /* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
-var name = "Anonymaus"
-function hello(name, favFood) {
-  //alert("Hello there, I'm " + name + " and my favourite food is "+ favFood + " ! <O(/\)_")
-}
-document.addEventListener("scroll", hello(name, "cheese"))
-
-function tripleMe(a) {
-  return 3 * a
-}
-
-//alert(tripleMe(16))
-
-
-
-
-
+document.getElementById("js-test1").addEventListener("click", () => alert("Thanks for clicking"))
 
 
 
