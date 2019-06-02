@@ -101,7 +101,10 @@ a:link:active, a:visited:active {
 }
 
 .profilephoto:hover {
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -30px 120px 10px rgba(255, 255, 0, 0.5),
+    30px 0px 120px 10px rgba(0, 255, 0, 0.4),
+    0px 30px 120px 10px rgba(0, 0, 255, 0.8),
+    -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
   transform: scale(2) rotate(-5deg);
 }
 
@@ -265,6 +268,62 @@ button:active, button:focus {
 #list-items li {
   border-bottom: 1px solid #eeeeee;
   padding: 0.5em;
+}
+
+/* ==================== JAVA SCRIPT IN 10 days TO DO APP ===================== */
+.todoapp {
+  margin: 5vw;
+  background-color: lightblue;
+  padding: 1rem;
+  z-index: 0;
+    text-align: center;
+}
+
+#todo-form {
+  font-size: 1rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin: 0 1em 1.5rem;
+  }
+
+.todoapp input {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  max-width: 60%;
+}
+
+#submit {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background: white;
+  color: black;
+  border: solid 2px white;
+}
+
+#submit:hover {
+  background-color: grey;
+}
+
+#submit:active, #submit:focus {
+  background-color: lightblue;
+  border: solid 2px black;
+}
+
+li button {
+  padding: 0.5em 1em;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.todoapp h3 {
+  text-align: center;
+  background: none;
+  box-shadow: none;
+  border-bottom: 2px solid black;
+}
+.todoapp ul {
+  list-style: none;
 }
 
 /* ======================= FOOTER ========================= */

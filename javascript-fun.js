@@ -39,9 +39,12 @@ function newHeadline(l) {
 /* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
 document.getElementById("js-test1").addEventListener("click", () => alert("Thanks for clicking"))
 
+let theForm = document.getElementById("todo-form")
 
-
-
+theForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+    alert("it works")
+  })
 
 
 
