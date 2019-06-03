@@ -309,7 +309,7 @@ button:active, button:focus {
   border: solid 2px black;
 }
 
-li button {
+.delete {
   padding: 0.5em 1em;
   background: none;
   color: white;
@@ -322,8 +322,9 @@ li button {
   box-shadow: none;
   border-bottom: 2px solid black;
 }
-.todoapp ul {
+#todo-list {
   list-style: none;
+  line-height: 3rem;
 }
 
 /* ======================= FOOTER ========================= */

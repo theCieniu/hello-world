@@ -39,16 +39,25 @@ function newHeadline(l) {
 /* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
 document.getElementById("js-test1").addEventListener("click", () => alert("Thanks for clicking"))
 
-let theForm = document.getElementById("todo-form")
+let todoForm = document.getElementById("todo-form")
+let todoInput = document.getElementById("todo-input")
+let todoList = document.getElementById("todo-list")
 
-theForm.addEventListener("submit", (e) => {
+todoForm.addEventListener("submit", (e) => {
   e.preventDefault()
-    alert("it works")
+  createLi(todoInput.value)
   })
 
+function createLi(x) {
+  let todoTask = `<li>${x} <button class="delete" onclick="deleteTask(this)">Delete</button></li>`
+  todoList.insertAdjacentHTML("beforeend", todoTask)
+  todoInput.value = ""
+  todoInput.focus()
+}
 
-
-
+function deleteTask(doneTask) {
+  doneTask.parentElement.remove()
+}
 
 
 
