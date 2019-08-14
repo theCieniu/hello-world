@@ -1,7 +1,7 @@
 let today = new Date();
 let hourNow = today.getHours();
 //above code is from "JavaScript and jQuery" book by J. Duckett
-var greeting = "Hi!"
+let greeting = "Hi!"
 
 if (hourNow > 19) {
   greeting = "Good evening!"
