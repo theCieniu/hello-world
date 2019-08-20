@@ -327,6 +327,17 @@ button:active, button:focus {
   line-height: 3rem;
 }
 
+/* =================== RANDOM NUMBER GENERATOR ===========*/
+#random {
+  margin: 5vw;
+  background-color: lightblue;
+  padding: 1rem;
+  z-index: 0;
+  text-align: center;
+}
+
+
+
 /* ======================= FOOTER ========================= */
 footer {
   margin: 5rem -15vw 0;

@@ -37,6 +37,7 @@ function newHeadline(l) {
 
 
 /* ========= 10 DAYS WITH JAVA SCRIPT TUTORIALS ============= */
+/* ========= TO DO APP ====================================== */
 document.getElementById("js-test1").addEventListener("click", () => alert("Thanks for clicking"))
 
 let todoForm = document.getElementById("todo-form")
