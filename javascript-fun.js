@@ -63,18 +63,4 @@ function deleteTask(doneTask) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* this is the end */

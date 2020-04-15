@@ -336,7 +336,9 @@ button:active, button:focus {
   text-align: center;
 }
 
-
+.hiddenElement {
+  visibility: hidden;
+}
 
 /* ======================= FOOTER ========================= */
 footer {
