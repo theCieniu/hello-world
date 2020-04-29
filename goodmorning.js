@@ -1,40 +1,43 @@
 let today = new Date();
 let hourNow = today.getHours();
 //above code is from "JavaScript and jQuery" book by J. Duckett
-let greeting = "Hi!"
+let greeting = "";
 
-if (hourNow > 19) {
-  greeting = "Good evening!"
-} else if (hourNow > 12) {
-  greeting = "Good afternoon!"
-} else if (hourNow > 5) {
-  greeting = "Good morning!"
-} else if (hourNow > 0) {
-  greeting = "Good night!"
-} else {
-  greeting = "Hello!"
-}
-
-/*
-I HAVE NO IDEA WHY MY SWITCH/CASE CODE DIDN'T WORK WHILE ABOVE IF/ELSE WORKS...
-
-switch (hourNow) {
-  case (hourNow > 19):
+switch(hourNow) {
+  case 23:
+  case 22:
+  case 21:
+  case 20:
+  case 19:
     greeting = "Good evening!"
-    break;
-  case (hourNow > 12):
-    greeting = "Good afternoon!"
-    break;
-  case (hourNow > 5):
+  break;
+  case 18:
+  case 17:
+  case 16:
+  case 15:
+  case 14:
+  case 13:
+  case 12:
+        greeting = "Good afternoon!"
+  break;
+  case 11:
+  case 10:
+  case 9:
+  case 8:
+  case 7:
+  case 6:
+  case 5:
     greeting = "Good morning!"
-    break;
-  case (hourNow > 0):
+  break;
+  case 4:
+  case 3:
+  case 2:
+  case 1:
+  case 0:
     greeting = "Good night!"
-    break;
-  default:
-    greeting = "Hello!"
-    break;
+  break;
+  default: greeting = "Hi!"
 }
-*/
 
-document.write("<h2>" + greeting + "</h2>")
+let greetElement = document.getElementById("greetings");
+greetElement.textContent = greeting
