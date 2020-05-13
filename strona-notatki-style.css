@@ -8,93 +8,116 @@
 */
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0 15vw;
+  font-family: 'Playfair Display', serif;
+  --accent: #87B242;
+  --light: #D9DAD4;
+  --medium: gray;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  --mojzielony: #87B242;
-  --jasnyszary: #D9DAD4;
+  font-size: 1.25rem;
 }
 
-h1 {
-  margin: 0 -15vw 3rem;
-  font-family: 'Norican', cursive;
-  text-align: center;
-  color: white;
-  background-color: var(--mojzielony);
-  padding: 1rem;
-  font-size: 5rem;
+img {
+  width: 100%;
+}
+
+.wrap-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.part {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/*  ====== TYPOGRAPHY ======= */
+h2, nav, h3, h4 {
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  color: var(--mojzielony);
-  padding: 0.5em;
-  border-bottom: 2px solid var(--mojzielony)
-}
-
-h3 {
-  background: var(--jasnyszary);
-  padding: 1em;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  color: var(--accent);
+  margin: 1em 0;
+  border-bottom: 2px solid var(--accent);
 }
 
 p {
   line-height: 2em;
-  margin: 2em 0 3em;
+  margin-bottom: 2em;
 }
 
-ol, ul {
-  line-height: 2em;
+.title {
+  padding: 10vmin 0;
+  background-color: var(--accent);
+  color: white;
+  text-align: center;
+  font-family: 'Norican', cursive;
+  font-size: 3rem;
 }
 
+/*  ====== A LINKS ======= */
 a:link, a:visited {
   color: gray;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--mojzielony);
+  color: var(--accent);
   text-decoration: underline;
 }
 
 a:link:active, a:visited:active {
   text-decoration: none;
-  color: var(--mojzielony);
+  color: var(--accent);
 }
 
-.code {
-  background-color: var(--jasnyszary);
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
-  padding: 3px;
-  padding-left: 5px;
+/*  ====== HEADER & NAVIGATION ======= */
+nav {
+  background-color: var(--light);
+}
+
+nav li {
+margin: .6em;
+  list-style: none;
+}
+
+nav a {
+
+  padding: 0.6em;
+  border-radius: 1em;
+}
+
+nav a:hover {
+  color: var(--medium);
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== ABOUT =========*/
+
+.about {
+  background-color: var(--light);
 }
 
 .about {
-  display: flex;
-  margin: 0 -15vw 2em;
-  padding: 1em 10vw;
-  background-color: var(--jasnyszary);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25),
-  0 -5px 25px rgba(0, 0, 0, 0.25);
 }
 
-.about span {
-  font-size: 0.8em;
-  font-style: italic;
-  margin-left: 3em;
-}
+.profile{
+  width: 45%;
+  margin: 1rem 3rem;
+  }
 
-.profilephoto {
-  max-width: 30vw;
-  align-self: center;
-  margin: 1em;
-  border: 2px;
-  border-color: black;
+.profilephoto{
   border-radius: 50%;
   box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
   transition: 300ms;
@@ -108,49 +131,120 @@ a:link:active, a:visited:active {
   transform: scale(2) rotate(-5deg);
 }
 
-.loved-li {
-  margin-left: 0;
-  margin-bottom: 3em;
+.about ul {
+  margin-left: 2rem;
+  line-height: 2em;
 }
 
-.loved-li li::before {
-  content: '\2665';
-  padding-right: 1em;
-}
-
-form {
-  background-color: var(--jasnyszary);
-  padding: 30px;
-  padding-left: 50px;
-  margin: 1em 10vw 5rem;
-}
-
-[type=textarea] {
-  background-color: var(--mojzielony);
-}
+/* =================== FORM ==========================*/
 
 button {
-  font-size: 1rem;
-  color: white;
-  padding: 1em;
-  margin-left: 1em;
+  background-color: var(--accent);
   border: none;
+  padding: 0.5em 1em;
+  margin: 1em;
   border-radius: 1em;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-  background-color: var(--mojzielony);
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 5px 5px 25px rgba(0,0,0,.25);
 }
 
-button:hover {
-  background-color: grey;
-}
 
-button:active, button:focus {
-  background-color: black;
+button:focus, button:active  {
+  box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+  color: var(--medium);
   outline: none;
 }
 
+button:hover {
+  background-color: var(--medium);
+  color: white;
+}
+
+
+input {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 2px solid var(--accent);
+  border-radius: 1em;
+}
+
+input:focus, input:active {
+  outline: none;
+  border: 2px solid var(--medium);
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+fieldset legend {
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
 /* ======================= CODE PLAYGROUND =================== */
-/* =========================== box shadow ==================== */
+.code-playground {
+  background-color: var(--light);
+  margin: 0;
+  padding-bottom: 3em;
+}
+
+.box {
+  width: 80%;
+  max-width: 1000px;
+  margin: 150px auto;
+  border: 3px solid var(--accent);
+  border-radius: 3em;
+  padding: 50px;
+  background-color: white;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 1em;
+  color: var(--light);
+}
+
+/* =================== GRADIENT AND box shadow ==================== */
+.gradientbox1 {
+  width: 80%;
+  display: block;
+  margin: 0 3rem;
+  height: 100px;
+  background: repeating-linear-gradient(45deg,
+      yellow 0px,
+      cyan 40px,
+      magenta 80px,
+      yellow 110px);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gradientbox1:hover {
+  transform: skewY(-5deg);
+}
+
+.gradientbox2 {
+  display: block;
+  margin: 0 3rem;
+  width: 80%;
+  height: 100px;
+  background: repeating-linear-gradient(90deg,
+      black 0px,
+      black 20px,
+      white 20px,
+      white 40px);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gradientbox2:hover {
+  transform: skewX(45deg);
+}
+
 .rainbow-box {
   width: 10em;
   height: 10em;
@@ -168,43 +262,6 @@ button:active, button:focus {
     -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
 }
 
-/* =========================	GRADIENT ===============================*/
-.gradientbox1 {
-  width: 80%;
-  display: block;
-  margin: 0 3rem;
-  height: 100px;
-  background: repeating-linear-gradient(45deg,
-    yellow 0px,
-    cyan 40px,
-    magenta 80px,
-    yellow 110px);
-  border-radius: 10px;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-}
-
-.gradientbox1:hover {
-  transform: skewY(-5deg);
-}
-
-.gradientbox2 {
-  display: block;
-  margin: 0 3rem;
-  width: 80%;
-  height: 100px;
-  background: repeating-linear-gradient(90deg,
-    black 0px,
-    black 20px,
-    white 20px,
-    white 40px);
-  border-radius: 10px;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-}
-
-.gradientbox2:hover {
-  transform: skewX(45deg);
-}
-
 /* ===================== HEART ========================= */
 .heartp {
   display: block;
@@ -218,7 +275,7 @@ button:active, button:focus {
   margin-top: 10px;
   right: 0;
   left: 0;
-  background-color: var(--mojzielony);
+  background-color: var(--accent);
   height: 50px;
   width: 50px;
   transform: rotate(-45deg);
@@ -246,96 +303,14 @@ button:active, button:focus {
   left: 0px;
 }
 
-/* ===================== CAT BLINKING ======================== */
-.catblinking {
-  background-color: black;
-  position: relative;
-  border-radius: 50%;
-  align: center;
-  width: 100px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
-}
-
-/* ==================== JAVA SCRIPT IN HALF AN HOUR ===================== */
+/* ==================== LIST - JAVASCRIPT IN HALF AN HOUR ===================== */
 .highlight {
   background-color: yellow;
 }
 
-#list-items li {
-  border-bottom: 1px solid #eeeeee;
-  padding: 0.5em;
-}
 
 /* ==================== JAVA SCRIPT IN 10 days TO DO APP ===================== */
-.todoapp {
-  margin: 5vw;
-  background-color: lightblue;
-  padding: 1rem;
-  z-index: 0;
-    text-align: center;
-}
-
-#todo-form {
-  font-size: 1rem;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-  margin: 0 1em 1.5rem;
-  }
-
-.todoapp input {
-  padding: 0.5em 1em;
-  font-size: 1em;
-  max-width: 60%;
-}
-
-#submit {
-  font-size: 1rem;
-  padding: 0.5em 1em;
-  background: white;
-  color: black;
-  border: solid 2px white;
-}
-
-#submit:hover {
-  background-color: grey;
-}
-
-#submit:active, #submit:focus {
-  background-color: lightblue;
-  border: solid 2px black;
-}
-
-.delete {
-  padding: 0.5em 1em;
-  background: none;
-  color: white;
-  border: 2px solid white;
-}
-
-.todoapp h3 {
-  text-align: center;
-  background: none;
-  box-shadow: none;
-  border-bottom: 2px solid black;
-}
-#todo-list {
-  list-style: none;
-  line-height: 3rem;
-}
-
 /* =================== RANDOM NUMBER GENERATOR ===========*/
-#random {
-  margin: 5vw;
-  background-color: lightblue;
-  padding: 1rem;
-  z-index: 0;
-  text-align: center;
-}
-
 .hiddenElement {
   visibility: hidden;
 }
@@ -345,6 +320,44 @@ footer {
   margin: 0;
   text-align: center;
   color: white;
-  background-color: var(--mojzielony);
+  background-color: var(--accent);
   padding: 1em;
+}
+
+
+/* ============== MEDIA QUERY ================== */
+
+@media (max-width:900px) {
+
+.about {
+  flex-direction: column;
+}
+
+.profile {
+  width: 90%;
+}
+
+
+.box {
+  width: 90%;
+  margin: 100px auto;
+}
+
+
+
+
+
+}
+
+@media (max-width: 630px) {
+  .box {
+    width: 96%;
+    margin: 50px auto;
+  }
+
+  .title {
+      font-size: 2.2rem;
+      line-height: 2em;
+  }
+
 }
