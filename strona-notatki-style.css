@@ -323,3 +323,41 @@ footer {
   background-color: var(--accent);
   padding: 1em;
 }
+
+
+/* ============== MEDIA QUERY ================== */
+
+@media (max-width:900px) {
+
+.about {
+  flex-direction: column;
+}
+
+.profile {
+  width: 90%;
+}
+
+
+.box {
+  width: 90%;
+  margin: 100px auto;
+}
+
+
+
+
+
+}
+
+@media (max-width: 630px) {
+  .box {
+    width: 96%;
+    margin: 50px auto;
+  }
+
+  .title {
+      font-size: 2.2rem;
+      line-height: 2em;
+  }
+
+}
