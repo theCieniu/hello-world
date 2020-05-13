@@ -8,14 +8,14 @@ let hourNow = today.getHours();
 //above code is from "JavaScript and jQuery" book by J. Duckett
 let greeting = "";
 
-switch(hourNow) {
+switch (hourNow) {
   case 23:
   case 22:
   case 21:
   case 20:
   case 19:
     greeting = "Good evening!"
-  break;
+    break;
   case 18:
   case 17:
   case 16:
@@ -23,8 +23,8 @@ switch(hourNow) {
   case 14:
   case 13:
   case 12:
-        greeting = "Good afternoon!"
-  break;
+    greeting = "Good afternoon!"
+    break;
   case 11:
   case 10:
   case 9:
@@ -33,15 +33,16 @@ switch(hourNow) {
   case 6:
   case 5:
     greeting = "Good morning!"
-  break;
+    break;
   case 4:
   case 3:
   case 2:
   case 1:
   case 0:
     greeting = "Good night!"
-  break;
-  default: greeting = "Hi!"
+    break;
+  default:
+    greeting = "Hi!"
 }
 
 let greetElement = document.getElementById("greetings");
@@ -94,7 +95,7 @@ let todoList = document.getElementById("todo-list")
 todoForm.addEventListener("submit", (e) => {
   e.preventDefault()
   createLi(todoInput.value)
-  })
+})
 
 function createLi(x) {
   let todoTask = `<li>${x} <button class="delete" onclick="deleteTask(this)">Delete</button></li>`
@@ -114,7 +115,7 @@ function deleteTask(doneTask) {
 let randomForm = document.getElementById("random")
 
 randomForm.addEventListener("submit", (e) => {
-    let minimal = document.getElementById("range-min").value;
+  let minimal = document.getElementById("range-min").value;
   let mini = parseInt(minimal);
   let maximum = document.getElementById("range-max").value;
   let maxi = parseInt(maximum);
@@ -137,7 +138,7 @@ let randomNumber = 0
 minMaxSubmit.addEventListener("click", (e) => {
   let minimal
   let mini = parseInt(document.getElementById("guess-min").value);
-  let maximum  ;
+  let maximum;
   let maxi = parseInt(document.getElementById("guess-max").value);
   console.log(mini)
   console.log(maxi)
@@ -154,16 +155,16 @@ minMaxSubmit.addEventListener("click", (e) => {
 
 let checkNumber = document.getElementById("submitGuessButton")
 checkNumber.addEventListener("click", (f) => {
-      let guess = document.getElementById("numberGuessInput").value;
-      console.log(guess)
-      if (randomNumber == guess) {
-        console.log(`That's it, it's ${randomNumber}`);
-        alert(`That's it, it's ${randomNumber}`)
-      } else {
-      let  writeMissed = `<br>It's not ${guess}, try again!`
-      checkNumber.insertAdjacentHTML("afterend", writeMissed)
-      f.preventDefault();
-      }
+  let guess = document.getElementById("numberGuessInput").value;
+  console.log(guess)
+  if (randomNumber == guess) {
+    console.log(`That's it, it's ${randomNumber}`);
+    alert(`That's it, it's ${randomNumber}`)
+  } else {
+    let writeMissed = `<br>It's not ${guess}, try again!`
+    checkNumber.insertAdjacentHTML("afterend", writeMissed)
+    f.preventDefault();
+  }
 })
 
 /* =============================================================
