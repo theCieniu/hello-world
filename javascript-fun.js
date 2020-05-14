@@ -191,4 +191,42 @@ guessGame()
 
 */
 
+/* ========= CREATIVE JAVASCRIPT COURSE BY DEVED ============= */
+/* ========= ANOTHER TO DO APP BECAUSE WHY NOT  ============= */
+
+let anotherList = document.getElementById("another-list");
+let anotherButton = document.getElementById("another-button");
+let anInput = document.getElementById("an-input")
+let anItemNr = document.getElementById("an-item-number-display")
+let anItemList = anotherList.children;
+anItemNr.textContent = anItemList.length;
+
+anotherButton.addEventListener("click", () => {
+  //console.log(anInput.value);
+  let aNewItem = document.createElement("li");
+  aNewItem.textContent = anInput.value;
+  anotherList.appendChild(aNewItem);
+  anItemNr.textContent = anItemList.length;
+  for (it of anItemList) {
+    it.addEventListener("click", anDeleteItem)
+  }
+  anInput.value = "";
+  anInput.focus();
+})
+
+function anDeleteItem(it) {
+  it.stopPropagation();
+  //console.log(it.target);
+  it.target.remove();
+  anItemNr.textContent = anItemList.length;
+}
+
+
+
+
+
+
+
+
+
 /* this is the end */
