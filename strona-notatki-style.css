@@ -180,6 +180,12 @@ fieldset legend {
   padding: 0.2em;
 }
 
+#contact-message {
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 0;
+}
+
 /* ======================= CODE PLAYGROUND =================== */
 .code-playground {
   background-color: var(--light);
@@ -303,10 +309,91 @@ h3 {
   background-color: yellow;
 }
 
-/* ==================== JAVA SCRIPT IN 10 days TO DO APP ===================== */
+/* ===== JAVA SCRIPT IN 10 days TO DO APP ================= */
 /* =================== RANDOM NUMBER GENERATOR ===========*/
 .hiddenElement {
   visibility: hidden;
+}
+
+/* =================== GRID PRACTICE  ==================== */
+#grid-art {
+  grid-area: art;
+}
+
+#grid-biotech {
+  grid-area: biotech;
+}
+
+#grid-bulka {
+  grid-area: bulka;
+}
+
+#grid-code {
+  grid-area: code;
+}
+
+#grid-dino {
+  grid-area: dino;
+}
+
+#grid-makeup {
+  grid-area: makeup;
+}
+
+#grid-bunny {
+  grid-area: bunny;
+}
+
+#grid-nails {
+  grid-area: nails;
+}
+
+#grid-plant {
+  grid-area: plant;
+}
+
+#grid-food {
+  grid-area: food;
+}
+
+#grid-spanish {
+  grid-area: spanish;
+}
+
+#grid-witcher {
+  grid-area: witcher;
+}
+
+.grid-practice {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "art biotech bulka bulka "
+    "code dino bulka bulka "
+    "nails makeup bunny plant"
+    " nails food spanish witcher";
+  margin: 3rem auto;
+  grid-gap: 0.3rem;
+}
+
+.grid-box {
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-box:hover {
+  background: url("grid-practice/question-sign.gif") var(--accent);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-opacity {
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 /* ======================= FOOTER ========================= */

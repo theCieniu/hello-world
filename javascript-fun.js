@@ -225,8 +225,24 @@ function anDeleteItem(it) {
 
 
 
+/* ========= CSS GRID AND THINGS I like ============= */
+
+let lastGrid = document.getElementById("grid-h");
+let gridLikes = document.querySelectorAll(".grid-like");
+
+for (item of gridLikes) {
+  item.addEventListener("click", discover)
+}
+
+function discover(e) {
+  let i = e.target;
+  lastGrid.classList.toggle("grid-opacity");
+  i.classList.toggle("grid-opacity");
+  lastGrid = i;
+}
 
 
 
+/* ========= ============================== ============= */
 
 /* this is the end */
