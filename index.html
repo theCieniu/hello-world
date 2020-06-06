@@ -1,264 +1,438 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coding playground</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Norican|Playfair+Display&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <link rel="stylesheet" href="strona-notatki-style.css" />
+    <link rel="icon" href="favico.ico" type="image/ico" />
+    <meta name="author" content="Paulina Weiher" />
+    <meta
+      name="keywords"
+      content="Paulina Weiher theCieniu profile about page portfolio coding javascript practise"
+    />
+    <meta
+      name="description"
+      content="HTML i CSS practice page - example of coding practice and learning process by Paulina Weiher"
+    />
+  </head>
 
-<head>
+  <body>
+    <nav>
+      <ul class="wrap-row">
+        <li>
+          <a href="https://www.instagram.com/thecieniu/" target="_blank"
+            >@theCieniu</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/theCieniu" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </nav>
 
-	<meta charset="UTF-8">
-	<title>Coding playground</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato|Norican|Playfair+Display&display=swap&subset=latin-ext" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
-	<link rel="stylesheet" href="strona-notatki-style.css">
-	<link rel="icon" href="favico.ico" type="image/ico">
-	<meta name="author" content="Paulina Weiher">
-	<meta name="keywords" content="Paulina Weiher theCieniu profile about page portfolio coding javascript practise">
-	<meta name="description" content="HTML i CSS practice page - example of coding practice and learning process by Paulina Weiher">
-</head>
+    <header class="title">
+      <div class="part">
+        <h1>Paulina's code playground</h1>
+      </div>
+    </header>
 
-<body>
+    <main>
+      <section>
+        <div class="part">
+          <h2>Hello World! <span id="greetings"></span></h2>
+          <p>
+            This page is my HTML, CSS and JavaScript notepad. I've written it
+            from scratch and everytime I learn new feature I add here few lines
+            of code to test and practise. Due to that approach there isn't any
+            plan for this place so it may look chaotic and in some parts
+            painfully ugly, I'm aware of that. But this is just my free code
+            playground to test, practise and explore which helps me develop as a
+            programmer-wannabe. Be cool, have a nice day!
+          </p>
+        </div>
 
-	<nav>
-		<ul class="wrap-row">
-			<li><a href="https://www.instagram.com/thecieniu/" target="_blank">@theCieniu</a></li>
-			<li><a href="https://github.com/theCieniu" target="_blank">GitHub</a></li>
-		</ul>
-	</nav>
+        <div class="about wrap-row part">
+          <div class="profile">
+            <img
+              class="profilephoto"
+              src="img/paulina_weiher_profilowe.JPG"
+              alt="Paulina Weiher profile photo"
+            />
+          </div>
+          <div class="profile">
+            <h2>About me:</h2>
+            <ul>
+              <li>Paulina Weiher from Gdańsk, Poland</li>
+              <li>Biotechnologist specialized in virusology</li>
+              <li>
+                Blogger at
+                <a href="https://www.cienistosc.pl/">cienistosc.pl</a>
+              </li>
+              <li>Love learning new things, fantasy books and art</li>
+              <li>Wife and cat mum</li>
+            </ul>
+          </div>
+        </div>
 
-	<header class="title">
-		<div class="part">
-			<h1>Paulina's code playground</h1>
-		</div>
-	</header>
+        <div class="part">
+          <h2>My goal and future plans</h2>
+          <p>
+            I've started learning HTML, CSS and JavaScript to make my blogging
+            more professional and I've felt in love with coding. I worked as a
+            biotechnologis but I needed a new direction and programming seems to
+            be a perfect choice for me. Now I'm focused on learning new skills
+            and it's an amazing journey! My dream job is to join biotechnology
+            knowledge and programming skills.
+          </p>
+        </div>
 
-	<main>
+        <div class="part">
+          <h2>Send me a message!</h2>
+          <p>
+            Tbh I don't know yet how to make this form sending data anywhere,
+            but at least I've practised writhing and styling it ;)
+          </p>
+          <!---<form action="tu wpisz url gdzie przesłać dane" -->
+          <form action="">
+            <label for="contact-name">Name:</label>
+            <input
+              type="text"
+              id="contact-name"
+              placeholder="Your name"
+            /><br />
+            <label for="contact-mail"
+              >E-mail:
+              <input
+                type="text"
+                id="contact-mail"
+                placeholder="name@mail.com"
+                minlength="6"
+                required /></label
+            ><br />
+            <fieldset>
+              <legend>Type of message:</legend>
+              <input
+                type="radio"
+                id="contact-compliments"
+                name="messagetype"
+                value="compliments"
+                checked
+              />
+              <label for="contact-compliments">Compliments</label>
+              <input
+                type="radio"
+                id="contact-tips"
+                name="messagetype"
+                value="helpful-tips"
+              />
+              <label for="contact-tips">Helpful tips</label>
+            </fieldset>
+            <label for="contact-date">Prefered meeting date:</label>
+            <input id="contact-date" name="date" type="date" />
+            <br />
+            <label for="contact-message">Message:</label><br />
+            <input
+              type="textarea"
+              name="message"
+              id="contact-message"
+              placeholder="Write me a message"
+              required
+              col="50"
+            /><br />
+            <label for="checkbox1"
+              ><input
+                id="checkbox1"
+                type="checkbox"
+                name="contact-rodo"
+                required
+              />I agree that Paulina Weiher may collect, use and disclose my
+              personal data which I have provided in this form, for providing
+              marketing materials.</label
+            >
+            <br />
+            <button type="submit">Send!</button>
+          </form>
+        </div>
+      </section>
 
-		<section>
+      <!--===================================================-->
+      <!--===================================================-->
 
-			<div class="part">
-				<h2>Hello World! <span id="greetings"></span></h2>
-				<p>This page is my HTML, CSS and JavaScript notepad. I've written it from scratch and everytime I learn new feature I add here few lines of code to test and practise. Due to that approach there isn't any plan for this place so it may look
-					chaotic and in some parts painfully ugly, I'm aware of that. But this is just my free code playground to test, practise and explore which helps me develop as a programmer-wannabe. Be cool, have a nice day!</p>
-			</div>
+      <section class="code-playground">
+        <h2 class="title">Code playground</h2>
 
-			<div class="about wrap-row part">
-				<div class="profile">
-					<img class="profilephoto" src="img/paulina_weiher_profilowe.JPG" alt="Paulina Weiher profile photo" />
-				</div>
-				<div class="profile">
-					<h2>About me:</h2>
-					<ul>
-						<li>Paulina Weiher from Gdańsk, Poland</li>
-						<li>Biotechnologist specialized in virusology</li>
-						<li>Blogger at <a href="https://www.cienistosc.pl/">cienistosc.pl</a></li>
-						<li>Love learning new things, fantasy books and art</li>
-						<li>Wife and cat mum</li>
-					</ul>
-				</div>
-			</div>
+        <div class="box">
+          <h3>Gradients and box-shadows excercise</h3>
+          <div class="gradientbox1"></div>
+          <div class="gradientbox2"></div>
 
-			<div class="part">
-				<h2>My goal and future plans</h2>
-				<p>I've started learning HTML, CSS and JavaScript to make my blogging more professional and I've felt in love with coding. I worked as a biotechnologis but I needed a new direction and programming seems to be a perfect choice for me. Now I'm
-					focused on learning new skills and it's an amazing journey! My dream job is to join biotechnology knowledge and programming skills.
-				</p>
-			</div>
+          <div class="rainbow-box">
+            <p>@theCieniu</p>
+          </div>
 
-			<div class="part">
-				<h2>Send me a message!</h2>
-				<p>Tbh I don't know yet how to make this form sending data anywhere, but at least I've practised writhing and styling it ;)</p>
-				<!---<form action="tu wpisz url gdzie przesłać dane" -->
-				<form action="">
-					<label for="contact-name">Name:</label>
-					<input type="text" id="contact-name" placeholder="Your name"><br>
-					<label for="contact-mail">E-mail:
-						<input type="text" id="contact-mail" placeholder="name@mail.com" minlength="6" required></label><br>
-					<fieldset>
-						<legend>Type of message:</legend>
-						<input type="radio" id="contact-compliments" name="messagetype" value="compliments" checked>
-						<label for="contact-compliments">Compliments</label>
-						<input type="radio" id="contact-tips" name="messagetype" value="helpful-tips">
-						<label for="contact-tips">Helpful tips</label>
-					</fieldset>
-					<label for="contact-date">Prefered meeting date:</label>
-					<input id="contact-date" name="date" type="date">
-					<br>
-					<label for="contact-message">Message:</label><br>
-					<input type="textarea" name="message" id="contact-message" placeholder="Write me a message" required col="50"><br>
-					<label for="checkbox1"><input id="checkbox1" type="checkbox" name="contact-rodo" required>I agree that Paulina Weiher may collect, use and disclose my personal data which I have provided in this form, for providing marketing
-						materials.</label>
-					<br>
-					<button type="submit">Send!</button>
-				</form>
-			</div>
-		</section>
+          <h3>CSS heart ♥</h3>
+          <p>Heart code from Free Code Camp lesson. Next step: make it beat.</p>
+          <div class="heartp">
+            <div class="heart"></div>
+          </div>
+        </div>
 
-		<!--===================================================-->
-		<!--===================================================-->
+        <!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
 
+        <div class="box">
+          <h3>List 1</h3>
+          <p>
+            Youtube tutorial
+            <a
+              href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s"
+              target="_blank"
+              rel="nofollow"
+              >"JavaScript in Half an Hour (without jQuery!)"</a
+            >
+            by
+            <a
+              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
+              target="_blank"
+              rel="nofollow"
+              >LearnWebCode</a
+            >.
+          </p>
+          <h4 id="headline">Click a list item to replace this text.</h4>
+          <button id="list-button">Add new item</button>
+          <ul id="list-items">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+            <li>Fifth item</li>
+          </ul>
+        </div>
 
-		<section class="code-playground">
-			<h2 class="title">Code playground</h2>
+        <!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
 
-			<div class="box">
-				<h3>Gradients and box-shadows excercise</h3>
-				<div class="gradientbox1">
-				</div>
-				<div class="gradientbox2">
-				</div>
+        <div class="box">
+          <h3>List 2</h3>
+          <button id="js-test1">Click here!</button>
+          <p>
+            Youtube tutorials playlist
+            <a
+              href="https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs"
+              target="_blank"
+              rel="nofollow"
+              >"10 days with Java script"</a
+            >
+            by
+            <a
+              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
+              target="_blank"
+              rel="nofollow"
+              >LearnWebCode</a
+            >. Video 10 - "To do app."
+          </p>
 
-				<div class="rainbow-box">
-					<p>@theCieniu</p>
-				</div>
+          <div class="todoapp">
+            <h4>TO-DO app</h4>
+            <form id="todo-form">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="What I need to do..."
+                autocomplete="off"
+              />
+              <button id="submit">Create task</button>
+            </form>
+            <h4>Need to do:</h4>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
 
-				<h3>CSS heart ♥</h3>
-				<p>Heart code from Free Code Camp lesson. Next step: make it beat.
-				</p>
-				<div class="heartp">
-					<div class="heart">
-					</div>
-				</div>
-			</div>
+        <!--========== RANDOM NUMBER GENERATOR ===================-->
 
+        <div class="box">
+          <h3>Random number generator</h3>
+          <form id="random">
+            <h4>Generate a random number within a range</h4>
+            <label>Range minimum <input id="range-min" /></label><br />
+            <label>Range maximum <input id="range-max" /></label><br />
+            <br /><button type="submit" name="submit" id="submit">
+              Sumbit!
+            </button>
+          </form>
+        </div>
 
-			<!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
+        <!--=========GUESS A NUMBER BORING GAME==========================-->
 
-			<div class="box">
-				<h3>List 1</h3>
-				<p>Youtube tutorial <a href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s" target="_blank" rel="nofollow">"JavaScript in Half an Hour (without jQuery!)"</a> by <a
-						href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ" target="_blank" rel="nofollow">LearnWebCode</a>.</p>
-				<h4 id="headline">Click a list item to replace this text.</h4>
-				<button id="list-button">Add new item</button>
-				<ul id="list-items">
-					<li>First item</li>
-					<li>Second item</li>
-					<li>Third item</li>
-					<li>Fourth item</li>
-					<li>Fifth item</li>
-				</ul>
-			</div>
+        <div class="box">
+          <h3>Guess a number game</h3>
+          <form id="generateNumber">
+            <h4>Generate a number in a range</h4>
+            <label>from <input type="number" id="guess-min" /></label><br />
+            <label>to <input type="number" id="guess-max" /></label><br />
+            <button type="submit" id="submitRandom">Random!</button>
 
-			<!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
+            <div class="hiddenElement" id="guessForm">
+              <label>Your Guess <input id="numberGuessInput" /></label>
+              <button id="submitGuessButton">Check!</button>
+            </div>
+          </form>
+        </div>
 
-			<div class="box">
-				<h3>List 2</h3>
-				<button id="js-test1">Click here!</button>
-				<p>Youtube tutorials playlist <a href="https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs" target="_blank" rel="nofollow">"10 days with Java script"</a>
-					by <a href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ" target="_blank" rel="nofollow">LearnWebCode</a>. Video 10 - "To do app."</p>
+        <!--======== ANOTHER TO DO APP =========================-->
 
-				<div class="todoapp">
-					<h4>TO-DO app</h4>
-					<form id="todo-form">
-						<input id="todo-input" type="text" placeholder="What I need to do..." autocomplete="off" </input>
-						<button id="submit">Create task</button>
-					</form>
-					<h4> Need to do:</h4>
-					<ul id="todo-list">
-					</ul>
-				</div>
-			</div>
+        <div class="box">
+          <h3>Another to do app because why not</h3>
+          <h4>Number of tasks: <b id="an-item-number-display"></b></h4>
+          <ul id="another-list"></ul>
+          <form>
+            <input type="text" name="input" id="an-input" />
+            <button id="another-button" type="button" name="button">
+              Create task!
+            </button>
+          </form>
+        </div>
 
-			<!--========== RANDOM NUMBER GENERATOR ===================-->
+        <!--===================================================-->
 
-			<div class="box">
-				<h3>Random number generator </h3>
-				<form id="random">
-					<h4>Generate a random number within a range </h4>
-					<label>Range minimum <input id="range-min"></label><br>
-					<label>Range maximum <input id="range-max"></label><br>
-					<br><button type="submit" name="submit" id="submit">Sumbit!</button>
-					</script>
+        <div class="box">
+          <h3>CSS grid and JavaScript practice</h3>
+          <h4 id="grid-h">
+            Click the rectangle to discover things I like and I'm interested in
+            :)
+          </h4>
+          <div class="grid-practice">
+            <div class="grid-box" id="grid-art">
+              <img
+                src="grid-practice/art.JPG"
+                alt="venus milo with hands drawing in sketchbook"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-biotech">
+              <img
+                src="grid-practice/biotech.jpg"
+                alt="biotechnology laboratory - cosmetics ingredients samples"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-bulka">
+              <img
+                src="grid-practice/bulka.JPG"
+                alt="my cat Bułka sitting in the box on my desk"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-code">
+              <img
+                src="grid-practice/code.JPG"
+                alt="book about coding and being a programmer"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-dino">
+              <img
+                src="grid-practice/dinosaur.JPG"
+                alt="selfie with dinosaur in the museum"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-nails">
+              <img
+                src="grid-practice/nailart.JPG"
+                alt="nail art with swedish camuflage pattern"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-makeup">
+              <img
+                src="grid-practice/makeup.JPG"
+                alt="green and blue makeup eyeshadow palette"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-bunny">
+              <img
+                src="grid-practice/mufka.JPG"
+                alt="my bunny called Mufka"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-plant">
+              <img
+                src="grid-practice/plant.JPG"
+                alt="carnivore plant"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-food">
+              <img
+                src="grid-practice/ramen.JPG"
+                alt="ramen bowl"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-spanish">
+              <img
+                src="grid-practice/spanish.JPG"
+                alt="drawing sketchbook and spanish book"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-witcher">
+              <img
+                src="grid-practice/witcher.JPG"
+                alt="sketchbook with witcher and coloured pencils"
+                class="grid-opacity grid-like"
+              />
+            </div>
+          </div>
+        </div>
 
-				</form>
-			</div>
+        <!--===================================================-->
 
-			<!--=========GUESS A NUMBER BORING GAME==========================-->
+        <div class="box" id="storage">
+          <p>
+            I've watched a basic tutorial about local storage and now I'm trying
+            to use it by myself for the first time to get comfortable with code
+            involving local storage and understand it better. It's fun! :)
+          </p>
+          <h3>Local storage excercise</h3>
+          <form id="memorise" action="">
+            <label for="storage">Difficult English word to memorise:</label>
+            <br />
+            <input id="storage-input" type="text" placeholder="English word" />
+            <button>Memorise!</button>
+          </form>
 
-			<div class="box">
-				<h3>Guess a number game </h3>
-				<form id="generateNumber">
-					<h4>Generate a number in a range</h4>
-					<label>from <input type="number" id="guess-min"></label><br>
-					<label>to <input type="number" id="guess-max"><br>
-						<button type="submit" id="submitRandom">Random!</button>
+          <button id="remind">Remind me!</button>
+          <button id="clear-list">Clear list below</button>
+          <button id="clear-memory">Clear memory</button>
+          <ul id="words-list"></ul>
+        </div>
 
-						<div class="hiddenElement" id="guessForm">
-							<br><label>Your Guess <input id="numberGuessInput"></label>
-							<button id="submitGuessButton">Check!</button>
-						</div>
-				</form>
-			</div>
+        <!--===================================================-->
 
-			<!--======== ANOTHER TO DO APP =========================-->
+        <!--===================================================-->
 
-			<div class="box">
-				<h3>Another to do app because why not</h3>
-				<h4>Number of tasks: <b id="an-item-number-display"></b></h4>
-				<ul id="another-list">
-				</ul>
-				<form>
-					<input type="text" name="input" id="an-input">
-					<button id="another-button" type="button" name="button">Create task!</button>
-				</form>
-			</div>
+        <div class="box">
+          <h3>Excercise</h3>
+        </div>
 
-			<!--===================================================-->
+        <!--===================================================-->
+      </section>
+    </main>
 
-			<div class="box">
-				<h3>CSS grid and JavaScript practice</h3>
-				<h4 id="grid-h">Click the rectangle to discover things I like and I'm interested in :) </h4>
-				<div class="grid-practice">
-					<div class="grid-box" id="grid-art">
-						<img src="grid-practice/art.JPG" alt="venus milo with hands drawing in sketchbook" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-biotech">
-						<img src="grid-practice/biotech.jpg" alt="biotechnology laboratory - cosmetics ingredients samples" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-bulka">
-						<img src="grid-practice/bulka.JPG" alt="my cat Bułka sitting in the box on my desk" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-code">
-						<img src="grid-practice/code.JPG" alt="book about coding and being a programmer" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-dino">
-						<img src="grid-practice/dinosaur.JPG" alt="selfie with dinosaur in the museum" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-nails">
-						<img src="grid-practice/nailart.JPG" alt="nail art with swedish camuflage pattern" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-makeup">
-						<img src="grid-practice/makeup.JPG" alt="green and blue makeup eyeshadow palette" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-bunny">
-						<img src="grid-practice/mufka.JPG" alt="my bunny called Mufka" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-plant">
-						<img src="grid-practice/plant.JPG" alt="carnivore plant" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-food">
-						<img src="grid-practice/ramen.JPG" alt="ramen bowl" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-spanish">
-						<img src="grid-practice/spanish.JPG" alt="drawing sketchbook and spanish book" class="grid-opacity grid-like">
-					</div>
-					<div class="grid-box" id="grid-witcher">
-						<img src="grid-practice/witcher.JPG" alt="sketchbook with witcher and coloured pencils" class="grid-opacity grid-like">
-					</div>
-				</div>
-			</div>
+    <footer>
+      I don't serve any cookies, I'm on a diet. Paulina Weiher 2020
+    </footer>
 
-			<!--===================================================-->
-
-			<div class="box">
-				<h3>Excercise </h3>
-			</div>
-
-			<!--===================================================-->
-
-		</section>
-	</main>
-
-	<footer> I don't serve any cookies, I'm on a diet. Paulina Weiher 2020</footer>
-
-	<script src="javascript-fun.js"></script>
-</body>
-
+    <script src="javascript-fun.js"></script>
+  </body>
 </html>
