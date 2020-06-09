@@ -25,18 +25,7 @@
   </head>
 
   <body>
-    <nav>
-      <ul class="wrap-row">
-        <li>
-          <a href="https://www.instagram.com/thecieniu/" target="_blank"
-            >@theCieniu</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/theCieniu" target="_blank">GitHub</a>
-        </li>
-      </ul>
-    </nav>
+    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."header.html") ?>
 
     <header class="title">
       <div class="part">
@@ -432,11 +421,7 @@
         <!--===================================================-->
       </section>
     </main>
-
-    <footer>
-      I don't serve any cookies, I'm on a diet. Paulina Weiher 2020
-    </footer>
-
+    <?php include($IPATH."footer.html") ?>
     <script src="javascript-fun.js"></script>
   </body>
 </html>
