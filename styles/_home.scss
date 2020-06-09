@@ -1,0 +1,98 @@
+.hero {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  margin: auto 5vw;
+  svg {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+}
+
+.intro-text,
+.intro-img {
+  flex: 1 1 40rem;
+}
+
+/*======= ANIMATIONS  ===========*/
+
+#left-leaf {
+  animation: plant 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes plant {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+#wisker1r,
+#wisker2r,
+#wisker2l,
+#wisker1l {
+  animation: whisker 2s ease-in-out infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+#wisker2l,
+#wisker1l {
+  transform-origin: right;
+}
+
+#wisker2r,
+#wisker1l {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes whisker {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+#tail {
+  animation: whisker 4s ease-in-out infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+#cloud {
+  animation: cloud 8s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes cloud {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#woolball {
+  animation: woolball 4s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes woolball {
+  to {
+    transform: translateX(-40%) rotate(-90deg);
+  }
+}
+
+#code {
+  animation: code 1s ease-in-out infinite alternate;
+}
+
+@keyframes code {
+  to {
+    opacity: 0%;
+  }
+}

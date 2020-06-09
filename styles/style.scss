@@ -1,0 +1,98 @@
+$dark: #111;
+$medium: #666670;
+$light: #c3c3c3;
+$color1: #9cce40;
+$color1a: #87b242;
+$color2: #32c8b3;
+$color3: #c89819;
+$white: #fff;
+$whitish: #fffff5;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*======= GLOBAL STYLES ===========*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  color: $dark;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+/*img {
+  width: 100%;
+}*/
+
+main {
+  min-height: 85vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $white;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:link:active,
+a:visited:active {
+  color: $dark;
+}
+
+/*======= TYPOGRAPHY ===========*/
+h1 {
+  font-size: calc(2rem + 1vw);
+  font-family: "Norican", cursive;
+}
+
+h2 {
+  font-size: calc(3rem + 4vw);
+  font-family: "Norican", cursive;
+  text-align: center;
+  margin: calc(2rem + 3vh);
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: calc(3rem + 0.5vw);
+  margin: 2rem auto;
+  span {
+    color: $color1a;
+  }
+}
+
+h4 {
+  font-size: calc(2.4rem + 1vw);
+}
+h5 {
+  font-size: calc(2rem + 1vw);
+}
+
+@import "header";
+@import "home";
+@import "footer";
+@import "responsive";

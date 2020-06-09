@@ -6,37 +6,8 @@
   font-family: 'Playfair Display', serif;
   font-family: 'Norican', cursive;
 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Playfair Display", serif;
-  --accent: #87b242;
-  --light: #d9dad4;
-  --medium: gray;
-  padding: 0;
-  font-size: 1.25rem;
-}
-
 img {
   width: 100%;
-}
-
-.wrap-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.part {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3rem 0;
 }
 
 /*  ====== TYPOGRAPHY ======= */
@@ -67,24 +38,7 @@ p {
   font-size: 3rem;
 }
 
-/*  ====== A LINKS ======= */
-a:link,
-a:visited {
-  color: gray;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-a:link:active,
-a:visited:active {
-  text-decoration: none;
-  color: var(--accent);
-}
-
+/
 /*  ====== HEADER & NAVIGATION ======= */
 nav {
   background-color: var(--light);

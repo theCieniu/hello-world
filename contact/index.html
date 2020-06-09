@@ -1,0 +1,59 @@
+<div class="part">
+  <h2>Send me a message!</h2>
+  <p>
+    Tbh I don't know yet how to make this form sending data anywhere, but at
+    least I've practised writhing and styling it ;)
+  </p>
+  <!---<form action="tu wpisz url gdzie przesłać dane" -->
+  <form action="">
+    <label for="contact-name">Name:</label>
+    <input type="text" id="contact-name" placeholder="Your name" /><br />
+    <label for="contact-mail"
+      >E-mail:
+      <input
+        type="text"
+        id="contact-mail"
+        placeholder="name@mail.com"
+        minlength="6"
+        required /></label
+    ><br />
+    <fieldset>
+      <legend>Type of message:</legend>
+      <input
+        type="radio"
+        id="contact-compliments"
+        name="messagetype"
+        value="compliments"
+        checked
+      />
+      <label for="contact-compliments">Compliments</label>
+      <input
+        type="radio"
+        id="contact-tips"
+        name="messagetype"
+        value="helpful-tips"
+      />
+      <label for="contact-tips">Helpful tips</label>
+    </fieldset>
+    <label for="contact-date">Prefered meeting date:</label>
+    <input id="contact-date" name="date" type="date" />
+    <br />
+    <label for="contact-message">Message:</label><br />
+    <input
+      type="textarea"
+      name="message"
+      id="contact-message"
+      placeholder="Write me a message"
+      required
+      col="50"
+    /><br />
+    <label for="checkbox1"
+      ><input id="checkbox1" type="checkbox" name="contact-rodo" required />I
+      agree that Paulina Weiher may collect, use and disclose my personal data
+      which I have provided in this form, for providing marketing
+      materials.</label
+    >
+    <br />
+    <button type="submit">Send!</button>
+  </form>
+</div>
