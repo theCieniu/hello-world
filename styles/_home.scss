@@ -6,6 +6,18 @@
     max-width: 100%;
     max-height: 60vh;
   }
+
+  h3 span {
+    color: $color1a;
+  }
+}
+
+.home-title {
+  font-size: calc(3rem + 4vw);
+  font-family: "Norican", cursive;
+  text-align: center;
+  margin: calc(2rem + 3vh);
+  line-height: 1.2em;
 }
 
 .intro-text,

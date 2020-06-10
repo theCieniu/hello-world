@@ -33,7 +33,7 @@ ul {
 
 a,
 a:visited {
-  color: #fff;
+  color: #111;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
@@ -43,6 +43,40 @@ a:hover,
 a:focus,
 a:link:active,
 a:visited:active {
+  color: #87b242;
+}
+
+button {
+  background-color: #87b242;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+nav a,
+nav a:visited,
+footer a,
+footer a:visited,
+button a,
+button a:visited {
+  color: #fff;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:link:active,
+nav a:visited:active,
+footer a:hover,
+footer a:focus,
+footer a:link:active,
+footer a:visited:active,
+button a:hover,
+button a:focus,
+button a:link:active,
+button a:visited:active {
   color: #111;
 }
 
@@ -53,20 +87,12 @@ h1 {
 }
 
 h2 {
-  font-size: calc(3rem + 4vw);
-  font-family: "Norican", cursive;
-  text-align: center;
-  margin: calc(2rem + 3vh);
-  line-height: 1.2em;
+  font-size: calc(2rem + 0.5vw);
 }
 
 h3 {
   font-size: calc(3rem + 0.5vw);
   margin: 2rem auto;
-}
-
-h3 span {
-  color: #87b242;
 }
 
 h4 {
@@ -101,14 +127,14 @@ nav {
   color: #fff;
 }
 
-nav .selected {
+nav #selected {
   background-color: #fff;
-  color: #111;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
+  color: #111;
 }
 
-nav .selected:hover {
+nav #selected:hover {
   background-color: #111;
   color: #fff;
 }
@@ -191,6 +217,18 @@ nav ul li {
 .hero svg {
   max-width: 100%;
   max-height: 60vh;
+}
+
+.hero h3 span {
+  color: #87b242;
+}
+
+.home-title {
+  font-size: calc(3rem + 4vw);
+  font-family: "Norican", cursive;
+  text-align: center;
+  margin: calc(2rem + 3vh);
+  line-height: 1.2em;
 }
 
 .intro-text,
@@ -341,6 +379,116 @@ nav ul li {
   to {
     opacity: 0%;
   }
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5vh 5vw;
+  min-height: 85vh;
+}
+
+#about-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 30rem;
+          flex: 2 1 30rem;
+  text-align: center;
+}
+
+#about-text h2,
+#about-text button {
+  margin: 2rem 0;
+}
+
+#about-text li {
+  margin: 1rem 0;
+}
+
+#about-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.profilephoto {
+  max-width: 100%;
+  max-height: 60vh;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.profilephoto:hover {
+  -webkit-box-shadow: 0px -30px 120px 10px rgba(255, 255, 0, 0.5), 30px 0px 120px 10px rgba(0, 255, 0, 0.4), 0px 30px 120px 10px rgba(0, 0, 255, 0.8), -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
+          box-shadow: 0px -30px 120px 10px rgba(255, 255, 0, 0.5), 30px 0px 120px 10px rgba(0, 255, 0, 0.4), 0px 30px 120px 10px rgba(0, 0, 255, 0.8), -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
+  -webkit-transform: scale(2) rotate(-5deg);
+          transform: scale(2) rotate(-5deg);
+}
+
+#future-plans {
+  width: 100vw;
+  min-height: 95vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/dna-code.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/dna-code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#future-plans .text {
+  color: white;
+  max-width: 1000px;
+  margin: 1rem auto 0;
+  padding: 10vh 5vw;
+}
+
+#future-plans h2 {
+  margin: 2rem 0;
+}
+
+#future-plans p {
+  line-height: 2em;
 }
 
 footer {

@@ -7,11 +7,13 @@ nav {
   flex-wrap: wrap;
   background-color: $color1a;
   color: $white;
-  .selected {
+  #selected {
     background-color: $white;
-    color: $dark;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
+
+    color: $dark;
+
     &:hover {
       background-color: $dark;
       color: $white;

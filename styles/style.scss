@@ -51,7 +51,7 @@ ul {
 
 a,
 a:visited {
-  color: $white;
+  color: $dark;
   text-decoration: none;
   transition: color 0.5s ease-in-out;
 }
@@ -60,7 +60,33 @@ a:hover,
 a:focus,
 a:link:active,
 a:visited:active {
-  color: $dark;
+  color: $color1a;
+}
+
+button {
+  background-color: $color1a;
+  color: $white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: $white;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+nav,
+footer,
+button {
+  a,
+  a:visited {
+    color: $white;
+  }
+
+  a:hover,
+  a:focus,
+  a:link:active,
+  a:visited:active {
+    color: $dark;
+  }
 }
 
 /*======= TYPOGRAPHY ===========*/
@@ -70,19 +96,12 @@ h1 {
 }
 
 h2 {
-  font-size: calc(3rem + 4vw);
-  font-family: "Norican", cursive;
-  text-align: center;
-  margin: calc(2rem + 3vh);
-  line-height: 1.2em;
+  font-size: calc(2rem + 0.5vw);
 }
 
 h3 {
   font-size: calc(3rem + 0.5vw);
   margin: 2rem auto;
-  span {
-    color: $color1a;
-  }
 }
 
 h4 {
@@ -94,5 +113,6 @@ h5 {
 
 @import "header";
 @import "home";
+@import "about";
 @import "footer";
 @import "responsive";
