@@ -71,6 +71,10 @@ button {
   border-radius: 2rem;
   color: $white;
   font-size: calc(1.5rem + 0.5vw);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $dark;
+  }
 }
 
 nav,
@@ -100,15 +104,15 @@ h2 {
 }
 
 h3 {
-  font-size: calc(3rem + 0.5vw);
+  font-size: calc(2rem + 1vw);
   margin: 2rem auto;
 }
 
 h4 {
-  font-size: calc(2.4rem + 1vw);
+  font-size: calc(1.8rem + 0.5vw);
 }
 h5 {
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1.6rem + 0.5vw);
 }
 
 .disclaimer {
@@ -134,6 +138,7 @@ fieldset {
 @import "header";
 @import "home";
 @import "about";
+@import "code";
 @import "contact";
 @import "footer";
 @import "responsive";

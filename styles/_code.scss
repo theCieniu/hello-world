@@ -1,0 +1,44 @@
+#code-nav-buttons {
+  @include flex(row, flex-end, center);
+  width: 100%;
+  button {
+    margin: 2rem;
+  }
+  i {
+    margin: 0 1rem 0 0;
+  }
+}
+
+#code-nav {
+  @include flex(row, space-between, flex-start);
+  background-color: $dark;
+  margin: 0 2rem 0 0;
+  width: 20vw;
+  position: absolute;
+  top: 0;
+  left: -20vw;
+  min-height: 100vh;
+  z-index: 1;
+  padding: 15vh 2rem 10vh;
+  transition: all 0.5s ease-in-out;
+}
+
+#playground {
+  margin: 4rem 5vw;
+  @include flex(row, center, strech);
+  flex-wrap: wrap;
+}
+
+.code-box {
+  flex: 1 1 60rem;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*
+display: grid;
+  grid-gap: 5vw;
+  grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(30rem, 1fr));
+*/

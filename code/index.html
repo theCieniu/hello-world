@@ -1,264 +1,379 @@
-<section class="code-playground">
-  <h2 class="title">Code playground</h2>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Front-end project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Norican&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="../favicon.ico" type="image/ico" />
+    <meta name="author" content="Paulina Weiher" />
+    <meta
+      name="keywords"
+      content="paulina weiher front-end web developer project portfolio"
+    />
+    <meta
+      name="description"
+      content="Front-end project with html, css and javascript for web developer portfolio by Paulina Weiher"
+    />
+  </head>
 
-  <div class="box">
-    <h3>Gradients and box-shadows excercise</h3>
-    <div class="gradientbox1"></div>
-    <div class="gradientbox2"></div>
+  <body>
+    <header>
+      <nav>
+        <h1>Code playground</h1>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a id="selected" href="./code/">Code</a>
+          </li>
+          <li>
+            <a href="../about/">About</a>
+          </li>
+          <li>
+            <a href="../contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="rainbow-box">
-      <p>@theCieniu</p>
-    </div>
+    <main>
+      <nav id="code-nav">
+        <ul>
+          <li><a href="#">Code0</a></li>
+        </ul>
+      </nav>
+      <section id="code-nav-buttons">
+        <h2>My coding excercises</h2>
+        <button id="code-list">
+          <i class="fas fa-caret-left"></i>List of content
+        </button>
+        <button id="sort-by-date">
+          <i class="fas fa-sort-amount-down"></i>Newest on top
+        </button>
+      </section>
+      <section id="playground">
+        <!--===================================================-->
 
-    <h3>CSS heart ♥</h3>
-    <p>Heart code from Free Code Camp lesson. Next step: make it beat.</p>
-    <div class="heartp">
-      <div class="heart"></div>
-    </div>
-  </div>
+        <div class="code-box" id="storage">
+          <p>
+            I've watched a basic tutorial about local storage and now I'm trying
+            to use it by myself for the first time to get comfortable with code
+            involving local storage and understand it better. It's fun! :)
+          </p>
+          <h3>Local storage excercise</h3>
+          <form id="memorise" action="">
+            <label for="storage">Difficult English word to memorise:</label>
+            <br />
+            <input id="storage-input" type="text" placeholder="English word" />
+            <button>Memorise!</button>
+          </form>
 
-  <!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
+          <button id="remind">Remind me!</button>
+          <button id="clear-list">Clear list below</button>
+          <button id="clear-memory">Clear memory</button>
+          <ul id="words-list"></ul>
+        </div>
 
-  <div class="box">
-    <h3>List 1</h3>
-    <p>
-      Youtube tutorial
-      <a
-        href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s"
-        target="_blank"
-        rel="nofollow"
-        >"JavaScript in Half an Hour (without jQuery!)"</a
-      >
-      by
-      <a
-        href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
-        target="_blank"
-        rel="nofollow"
-        >LearnWebCode</a
-      >.
-    </p>
-    <h4 id="headline">Click a list item to replace this text.</h4>
-    <button id="list-button">Add new item</button>
-    <ul id="list-items">
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-      <li>Fourth item</li>
-      <li>Fifth item</li>
-    </ul>
-  </div>
+        <!--===================================================-->
 
-  <!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
+        <div class="code-box">
+          <h3>CSS grid and JavaScript practice</h3>
+          <h4 id="grid-h">
+            Click the rectangle to discover things I like and I'm interested in
+            :)
+          </h4>
+          <div class="grid-practice">
+            <div class="grid-box" id="grid-art">
+              <img
+                src="grid-practice/art.JPG"
+                alt="venus milo with hands drawing in sketchbook"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-biotech">
+              <img
+                src="grid-practice/biotech.jpg"
+                alt="biotechnology laboratory - cosmetics ingredients samples"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-bulka">
+              <img
+                src="grid-practice/bulka.JPG"
+                alt="my cat Bułka sitting in the box on my desk"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-code">
+              <img
+                src="grid-practice/code.JPG"
+                alt="book about coding and being a programmer"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-dino">
+              <img
+                src="grid-practice/dinosaur.JPG"
+                alt="selfie with dinosaur in the museum"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-nails">
+              <img
+                src="grid-practice/nailart.JPG"
+                alt="nail art with swedish camuflage pattern"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-makeup">
+              <img
+                src="grid-practice/makeup.JPG"
+                alt="green and blue makeup eyeshadow palette"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-bunny">
+              <img
+                src="grid-practice/mufka.JPG"
+                alt="my bunny called Mufka"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-plant">
+              <img
+                src="grid-practice/plant.JPG"
+                alt="carnivore plant"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-food">
+              <img
+                src="grid-practice/ramen.JPG"
+                alt="ramen bowl"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-spanish">
+              <img
+                src="grid-practice/spanish.JPG"
+                alt="drawing sketchbook and spanish book"
+                class="grid-opacity grid-like"
+              />
+            </div>
+            <div class="grid-box" id="grid-witcher">
+              <img
+                src="grid-practice/witcher.JPG"
+                alt="sketchbook with witcher and coloured pencils"
+                class="grid-opacity grid-like"
+              />
+            </div>
+          </div>
+        </div>
 
-  <div class="box">
-    <h3>List 2</h3>
-    <button id="js-test1">Click here!</button>
-    <p>
-      Youtube tutorials playlist
-      <a
-        href="https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs"
-        target="_blank"
-        rel="nofollow"
-        >"10 days with Java script"</a
-      >
-      by
-      <a
-        href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
-        target="_blank"
-        rel="nofollow"
-        >LearnWebCode</a
-      >. Video 10 - "To do app."
-    </p>
+        <!--======== ANOTHER TO DO APP =========================-->
 
-    <div class="todoapp">
-      <h4>TO-DO app</h4>
-      <form id="todo-form">
-        <input
-          id="todo-input"
-          type="text"
-          placeholder="What I need to do..."
-          autocomplete="off"
-        />
-        <button id="submit">Create task</button>
-      </form>
-      <h4>Need to do:</h4>
-      <ul id="todo-list"></ul>
-    </div>
-  </div>
+        <div class="code-box">
+          <h3>Another to do app because why not</h3>
+          <h4>Number of tasks: <b id="an-item-number-display"></b></h4>
+          <ul id="another-list"></ul>
+          <form>
+            <input type="text" name="input" id="an-input" />
+            <button id="another-button" type="button" name="button">
+              Create task!
+            </button>
+          </form>
+        </div>
 
-  <!--========== RANDOM NUMBER GENERATOR ===================-->
+        <!--=========GUESS A NUMBER BORING GAME==========================-->
 
-  <div class="box">
-    <h3>Random number generator</h3>
-    <form id="random">
-      <h4>Generate a random number within a range</h4>
-      <label>Range minimum <input id="range-min" /></label><br />
-      <label>Range maximum <input id="range-max" /></label><br />
-      <br /><button type="submit" name="submit" id="submit">
-        Sumbit!
-      </button>
-    </form>
-  </div>
+        <div class="code-box">
+          <h3>Guess a number game</h3>
+          <form id="generateNumber">
+            <h4>Generate a number in a range</h4>
+            <label>from <input type="number" id="guess-min" /></label><br />
+            <label>to <input type="number" id="guess-max" /></label><br />
+            <button type="submit" id="submitRandom">Random!</button>
 
-  <!--=========GUESS A NUMBER BORING GAME==========================-->
+            <div class="hiddenElement" id="guessForm">
+              <label>Your Guess <input id="numberGuessInput" /></label>
+              <button id="submitGuessButton">Check!</button>
+            </div>
+          </form>
+        </div>
 
-  <div class="box">
-    <h3>Guess a number game</h3>
-    <form id="generateNumber">
-      <h4>Generate a number in a range</h4>
-      <label>from <input type="number" id="guess-min" /></label><br />
-      <label>to <input type="number" id="guess-max" /></label><br />
-      <button type="submit" id="submitRandom">Random!</button>
+        <!--========== RANDOM NUMBER GENERATOR ===================-->
 
-      <div class="hiddenElement" id="guessForm">
-        <label>Your Guess <input id="numberGuessInput" /></label>
-        <button id="submitGuessButton">Check!</button>
-      </div>
-    </form>
-  </div>
+        <div class="code-box">
+          <h3>Random number generator</h3>
+          <form id="random">
+            <h4>Generate a random number within a range</h4>
+            <label>Range minimum <input id="range-min" /></label><br />
+            <label>Range maximum <input id="range-max" /></label><br />
+            <br /><button type="submit" name="submit" id="submit">
+              Sumbit!
+            </button>
+          </form>
+        </div>
 
-  <!--======== ANOTHER TO DO APP =========================-->
+        <!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
 
-  <div class="box">
-    <h3>Another to do app because why not</h3>
-    <h4>Number of tasks: <b id="an-item-number-display"></b></h4>
-    <ul id="another-list"></ul>
-    <form>
-      <input type="text" name="input" id="an-input" />
-      <button id="another-button" type="button" name="button">
-        Create task!
-      </button>
-    </form>
-  </div>
+        <div class="code-box">
+          <h3>List 2</h3>
+          <button id="js-test1">Click here!</button>
+          <p>
+            Youtube tutorials playlist
+            <a
+              href="https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs"
+              target="_blank"
+              rel="nofollow"
+              >"10 days with Java script"</a
+            >
+            by
+            <a
+              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
+              target="_blank"
+              rel="nofollow"
+              >LearnWebCode</a
+            >. Video 10 - "To do app."
+          </p>
 
-  <!--===================================================-->
+          <div class="todoapp">
+            <h4>TO-DO app</h4>
+            <form id="todo-form">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="What I need to do..."
+                autocomplete="off"
+              />
+              <button id="submit">Create task</button>
+            </form>
+            <h4>Need to do:</h4>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
 
-  <div class="box">
-    <h3>CSS grid and JavaScript practice</h3>
-    <h4 id="grid-h">
-      Click the rectangle to discover things I like and I'm interested in :)
-    </h4>
-    <div class="grid-practice">
-      <div class="grid-box" id="grid-art">
-        <img
-          src="grid-practice/art.JPG"
-          alt="venus milo with hands drawing in sketchbook"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-biotech">
-        <img
-          src="grid-practice/biotech.jpg"
-          alt="biotechnology laboratory - cosmetics ingredients samples"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-bulka">
-        <img
-          src="grid-practice/bulka.JPG"
-          alt="my cat Bułka sitting in the box on my desk"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-code">
-        <img
-          src="grid-practice/code.JPG"
-          alt="book about coding and being a programmer"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-dino">
-        <img
-          src="grid-practice/dinosaur.JPG"
-          alt="selfie with dinosaur in the museum"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-nails">
-        <img
-          src="grid-practice/nailart.JPG"
-          alt="nail art with swedish camuflage pattern"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-makeup">
-        <img
-          src="grid-practice/makeup.JPG"
-          alt="green and blue makeup eyeshadow palette"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-bunny">
-        <img
-          src="grid-practice/mufka.JPG"
-          alt="my bunny called Mufka"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-plant">
-        <img
-          src="grid-practice/plant.JPG"
-          alt="carnivore plant"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-food">
-        <img
-          src="grid-practice/ramen.JPG"
-          alt="ramen bowl"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-spanish">
-        <img
-          src="grid-practice/spanish.JPG"
-          alt="drawing sketchbook and spanish book"
-          class="grid-opacity grid-like"
-        />
-      </div>
-      <div class="grid-box" id="grid-witcher">
-        <img
-          src="grid-practice/witcher.JPG"
-          alt="sketchbook with witcher and coloured pencils"
-          class="grid-opacity grid-like"
-        />
-      </div>
-    </div>
-  </div>
+        <!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
 
-  <!--===================================================-->
+        <div class="code-box">
+          <h3>List 1</h3>
+          <p>
+            Youtube tutorial
+            <a
+              href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s"
+              target="_blank"
+              rel="nofollow"
+              >"JavaScript in Half an Hour (without jQuery!)"</a
+            >
+            by
+            <a
+              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
+              target="_blank"
+              rel="nofollow"
+              >LearnWebCode</a
+            >.
+          </p>
+          <h4 id="headline">Click a list item to replace this text.</h4>
+          <button id="list-button">Add new item</button>
+          <ul id="list-items">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+            <li>Fifth item</li>
+          </ul>
+        </div>
+        <!--===================================================-->
 
-  <div class="box" id="storage">
-    <p>
-      I've watched a basic tutorial about local storage and now I'm trying to
-      use it by myself for the first time to get comfortable with code involving
-      local storage and understand it better. It's fun! :)
-    </p>
-    <h3>Local storage excercise</h3>
-    <form id="memorise" action="">
-      <label for="storage">Difficult English word to memorise:</label>
-      <br />
-      <input id="storage-input" type="text" placeholder="English word" />
-      <button>Memorise!</button>
-    </form>
+        <div class="code-box">
+          <h3>Gradients and box-shadows excercise</h3>
+          <div class="gradientbox1"></div>
+          <div class="gradientbox2"></div>
 
-    <button id="remind">Remind me!</button>
-    <button id="clear-list">Clear list below</button>
-    <button id="clear-memory">Clear memory</button>
-    <ul id="words-list"></ul>
-  </div>
+          <div class="rainbow-box">
+            <p>@theCieniu</p>
+          </div>
 
-  <!--===================================================-->
+          <h3>CSS heart ♥</h3>
+          <p>Heart code from Free Code Camp lesson. Next step: make it beat.</p>
+          <div class="heartp">
+            <div class="heart"></div>
+          </div>
+        </div>
 
-  <div class="box">
-    <h3>Excercise</h3>
-  </div>
+        <!--===================================================-->
 
-  <!--===================================================-->
+        <div class="code-box">
+          <h3>Empty excercise</h3>
+          <p>To be continued :)</p>
+        </div>
 
-  <div class="box">
-    <h3>Excercise</h3>
-  </div>
+        <!--===================================================-->
+      </section>
+    </main>
 
-  <!--===================================================-->
-</section>
+    <footer>
+      <p>
+        <a href="https://github.com/theCieniu/hello-world"
+          ><i class="fas fa-code"></i>this site's code</a
+        >
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/theCieniu"
+            target="_blank"
+            title="github profile @theCieniu"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/theCieniu"
+            target="_blank"
+            title="twitter profile @theCieniu"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/thecieniu/"
+            target="_blank"
+            title="instagram profile @theCieniu"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        I don't serve any cookies, I'm on a diet.
+        <a href="https://github.com/theCieniu" target="_blank"
+          >Paulina Weiher @theCieniu</a
+        >
+        &copy; 2020
+      </p>
+    </footer>
+
+    <script src="../javascript.js"></script>
+    <script src="javascript-fun.js"></script>
+  </body>
+</html>
