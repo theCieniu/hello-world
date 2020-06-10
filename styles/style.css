@@ -103,6 +103,39 @@ h5 {
   font-size: calc(2rem + 1vw);
 }
 
+.disclaimer {
+  display: inline-block;
+  font-size: calc(1rem + 0.2vw);
+  padding: 2em;
+}
+
+.disclaimer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input,
+textarea,
+fieldset {
+  font-size: calc(1.5rem + 0.5vw);
+  border: solid 2px #87b242;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
 /*======= NAVIGATION ===========*/
 nav {
   min-height: 10vh;
@@ -489,6 +522,55 @@ nav ul li {
 
 #future-plans p {
   line-height: 2em;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 85vh;
+  margin: 0 auto;
+  padding: 10vh 2rem;
+  max-width: 750px;
+}
+
+#contact h2,
+#contact p {
+  text-align: center;
+}
+
+#contact form {
+  margin: 4rem auto;
+  padding: 4rem 10%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact form textarea {
+  width: 100%;
 }
 
 footer {

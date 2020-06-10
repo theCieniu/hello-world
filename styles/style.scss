@@ -111,8 +111,29 @@ h5 {
   font-size: calc(2rem + 1vw);
 }
 
+.disclaimer {
+  display: inline-block;
+  font-size: calc(1rem + 0.2vw);
+  padding: 2em;
+}
+.disclaimer-box {
+  @include flex(row, center, center);
+}
+
+input,
+textarea,
+fieldset {
+  font-size: calc(1.5rem + 0.5vw);
+  border: solid 2px $color1a;
+  background-color: $white;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
 @import "header";
 @import "home";
 @import "about";
+@import "contact";
 @import "footer";
 @import "responsive";
