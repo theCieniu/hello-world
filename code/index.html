@@ -52,51 +52,70 @@
     </header>
 
     <main>
-      <nav id="code-nav">
+      <div id="code-nav">
+        <div class="burger" id="code-menu-burger">
+          <span class="b1"></span>
+          <span class="b3"></span>
+        </div>
         <ul>
-          <li><a href="#">Code0</a></li>
+          <li><a href="#">[To be continued]</a></li>
+          <li><a href="#storage">Local storage</a></li>
+          <li><a href="#css-grid">CSS Grid</a></li>
+          <li><a href="#todo3">TODO App</a></li>
+          <li><a href="#guess-number-game">Guess a number game</a></li>
+          <li><a href="#random-number-gen">Random number generator</a></li>
+          <li><a href="#todo2">TODO App input functionality</a></li>
+          <li><a href="#todo1">My first JavaScript</a></li>
+          <li><a href="#playful">Playful CSS</a></li>
         </ul>
-      </nav>
-      <section id="code-nav-buttons">
+      </div>
+      <section id="code-submenu">
         <h2>My coding excercises</h2>
         <button id="code-list">
           <i class="fas fa-caret-left"></i>List of content
         </button>
-        <button id="sort-by-date">
-          <i class="fas fa-sort-amount-down"></i>Newest on top
-        </button>
       </section>
       <section id="playground">
-        <!--===================================================-->
+        <!--============== NEW EXCERCISE =========================-->
+
+        <div class="code-box">
+          <h3>Empty excercise</h3>
+          <p>To be continued :)</p>
+        </div>
+
+        <!--=========== LOCAL STORAGE PRACTICE ======================-->
 
         <div class="code-box" id="storage">
+          <h3>Local storage excercise</h3>
           <p>
             I've watched a basic tutorial about local storage and now I'm trying
             to use it by myself for the first time to get comfortable with code
             involving local storage and understand it better. It's fun! :)
           </p>
-          <h3>Local storage excercise</h3>
+
           <form id="memorise" action="">
-            <label for="storage">Difficult English word to memorise:</label>
+            <label for="storage"
+              ><h4>Difficult English word to memorise:</h4></label
+            >
             <br />
             <input id="storage-input" type="text" placeholder="English word" />
             <button>Memorise!</button>
           </form>
 
           <button id="remind">Remind me!</button>
-          <button id="clear-list">Clear list below</button>
-          <button id="clear-memory">Clear memory</button>
           <ul id="words-list"></ul>
+          <button id="clear-list">Clear list above</button>
+          <button id="clear-memory">Clear memory</button>
         </div>
 
-        <!--===================================================-->
+        <!--======== CSS GRID PRACTICE ======================-->
 
-        <div class="code-box">
+        <div class="code-box" class="bigger-code-box" id="css-grid">
           <h3>CSS grid and JavaScript practice</h3>
-          <h4 id="grid-h">
+          <p id="grid-h">
             Click the rectangle to discover things I like and I'm interested in
             :)
-          </h4>
+          </p>
           <div class="grid-practice">
             <div class="grid-box" id="grid-art">
               <img
@@ -187,7 +206,7 @@
 
         <!--======== ANOTHER TO DO APP =========================-->
 
-        <div class="code-box">
+        <div class="code-box" id="todo3">
           <h3>Another to do app because why not</h3>
           <h4>Number of tasks: <b id="an-item-number-display"></b></h4>
           <ul id="another-list"></ul>
@@ -201,7 +220,7 @@
 
         <!--=========GUESS A NUMBER BORING GAME==========================-->
 
-        <div class="code-box">
+        <div class="code-box" id="guess-number-game">
           <h3>Guess a number game</h3>
           <form id="generateNumber">
             <h4>Generate a number in a range</h4>
@@ -218,7 +237,7 @@
 
         <!--========== RANDOM NUMBER GENERATOR ===================-->
 
-        <div class="code-box">
+        <div class="code-box" id="random-number-gen">
           <h3>Random number generator</h3>
           <form id="random">
             <h4>Generate a random number within a range</h4>
@@ -232,7 +251,7 @@
 
         <!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
 
-        <div class="code-box">
+        <div class="code-box" id="todo2">
           <h3>List 2</h3>
           <button id="js-test1">Click here!</button>
           <p>
@@ -270,8 +289,8 @@
 
         <!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
 
-        <div class="code-box">
-          <h3>List 1</h3>
+        <div class="code-box" id="todo1">
+          <h3>List 1 - my first JS</h3>
           <p>
             Youtube tutorial
             <a
@@ -300,27 +319,23 @@
         </div>
         <!--===================================================-->
 
-        <div class="code-box">
-          <h3>Gradients and box-shadows excercise</h3>
-          <div class="gradientbox1"></div>
-          <div class="gradientbox2"></div>
+        <div class="code-box" id="playful">
+          <h3>
+            Gradients, box-shadows, position:absolute/relative, animations
+          </h3>
+          <p>Excercises after Free code camp HTML/CSS course</p>
+          <div class="colorful-elements">
+            <div class="heart-box">
+              <div class="heart"></div>
+            </div>
 
-          <div class="rainbow-box">
-            <p>@theCieniu</p>
+            <div class="gradientbox1"></div>
+            <div class="gradientbox2"></div>
+
+            <div class="rainbow-box">
+              <span>@theCieniu</span>
+            </div>
           </div>
-
-          <h3>CSS heart ♥</h3>
-          <p>Heart code from Free Code Camp lesson. Next step: make it beat.</p>
-          <div class="heartp">
-            <div class="heart"></div>
-          </div>
-        </div>
-
-        <!--===================================================-->
-
-        <div class="code-box">
-          <h3>Empty excercise</h3>
-          <p>To be continued :)</p>
         </div>
 
         <!--===================================================-->
