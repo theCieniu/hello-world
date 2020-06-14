@@ -2,439 +2,1555 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Coding playground</title>
+    <title>Front-end project</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Norican|Playfair+Display&display=swap&subset=latin-ext"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Norican&family=Poppins&display=swap"
       rel="stylesheet"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
     />
-    <link rel="stylesheet" href="strona-notatki-style.css" />
-    <link rel="icon" href="favico.ico" type="image/ico" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
     <meta name="author" content="Paulina Weiher" />
     <meta
       name="keywords"
-      content="Paulina Weiher theCieniu profile about page portfolio coding javascript practise"
+      content="paulina weiher front-end web developer project portfolio"
     />
     <meta
       name="description"
-      content="HTML i CSS practice page - example of coding practice and learning process by Paulina Weiher"
+      content="Front-end project with html, css and javascript for web developer portfolio by Paulina Weiher"
     />
   </head>
 
   <body>
-    <nav>
-      <ul class="wrap-row">
-        <li>
-          <a href="https://www.instagram.com/thecieniu/" target="_blank"
-            >@theCieniu</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/theCieniu" target="_blank">GitHub</a>
-        </li>
-      </ul>
-    </nav>
-
-    <header class="title">
-      <div class="part">
-        <h1>Paulina's code playground</h1>
-      </div>
+    <header>
+      <nav>
+        <h1>Code playground</h1>
+        <ul class="wrap-row">
+          <li>
+            <a id="selected" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="./code/">Code</a>
+          </li>
+          <li>
+            <a href="./about/">About</a>
+          </li>
+          <li>
+            <a href="./contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <div class="part">
-          <h2>Hello World! <span id="greetings"></span></h2>
+      <h2 class="home-title">Paulina's code playground</h2>
+      <section class="hero">
+        <div class="intro-text">
+          <h3>Hello World! <span id="greetings"></span></h3>
           <p>
-            This page is my HTML, CSS and JavaScript notepad. I've written it
+            This page is my HTML, CSS and JavaScript playground. I've coded it
             from scratch and everytime I learn new feature I add here few lines
-            of code to test and practise. Due to that approach there isn't any
-            plan for this place so it may look chaotic and in some parts
-            painfully ugly, I'm aware of that. But this is just my free code
-            playground to test, practise and explore which helps me develop as a
+            to test and practise. Due to that approach there isn't any plan for
+            this place so it may look chaotic and in some parts painfully ugly,
+            I'm aware of that. But this is just my wild & free code place to
+            test, practise and explore which helps me develop as a
             programmer-wannabe. Be cool, have a nice day!
           </p>
         </div>
-
-        <div class="about wrap-row part">
-          <div class="profile">
-            <img
-              class="profilephoto"
-              src="img/paulina_weiher_profilowe.JPG"
-              alt="Paulina Weiher profile photo"
-            />
-          </div>
-          <div class="profile">
-            <h2>About me:</h2>
-            <ul>
-              <li>Paulina Weiher from Gdańsk, Poland</li>
-              <li>Biotechnologist specialized in virusology</li>
-              <li>
-                Blogger at
-                <a href="https://www.cienistosc.pl/">cienistosc.pl</a>
-              </li>
-              <li>Love learning new things, fantasy books and art</li>
-              <li>Wife and cat mum</li>
-            </ul>
-          </div>
+        <div class="intro-img">
+          <svg
+            width="1440"
+            height="1024"
+            viewBox="0 0 1440 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="code-playground">
+              <rect width="1440" height="1024" fill="white" />
+              <g id="desk">
+                <path
+                  id="Vector"
+                  d="M1076.43 849H343.428V851H1076.43V849Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_2"
+                  d="M397 885.135H208V887.396H397V885.135Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_3"
+                  d="M1222 885.135H1033V887.396H1222V885.135Z"
+                  fill="#3F3D56"
+                />
+              </g>
+              <g id="cloud" clip-path="url(#clip0)">
+                <path
+                  id="Vector_4"
+                  opacity="0.1"
+                  d="M1345 470.23C1345.01 487 1342.71 503.691 1338.15 519.83C1333.74 535.388 1327.26 550.282 1318.88 564.11C1318.88 614.21 1285.06 657.51 1235.97 678.11C1215.46 686.632 1193.45 690.983 1171.24 690.91H418.17C377.92 690.91 340.62 680.05 310.03 661.55C301.275 656.28 292.97 650.296 285.2 643.66C251.2 614.44 230.12 574.06 230.12 529.46C211.038 500.077 200.92 465.775 201 430.74C201 357.38 244.39 294.3 306.55 266.45C314.804 262.754 323.333 259.704 332.06 257.33C335.147 256.49 338.267 255.737 341.42 255.07C349.826 253.28 358.352 252.11 366.93 251.57C370.03 251.377 373.147 251.267 376.28 251.24H378C381.46 251.24 384.89 251.36 388.3 251.56L389.42 249.66C390.793 247.367 392.2 245.097 393.64 242.85C396.24 238.757 398.967 234.723 401.82 230.75C404.807 226.557 407.923 222.43 411.17 218.37L412 217.37C413.84 215.077 415.72 212.81 417.64 210.57C423.64 203.577 429.973 196.793 436.64 190.22C508.75 119.54 621.72 74.04 748.72 74.04C847.54 74.04 937.87 101.59 1007.06 147.11C1033.27 132.277 1062.88 124.493 1093 124.52C1190.74 124.52 1270 204.89 1270 304.03C1269.99 310.303 1269.65 316.571 1269 322.81C1292.56 339.488 1311.76 361.588 1324.99 387.245C1338.22 412.902 1345.08 441.364 1345 470.23V470.23Z"
+                  fill="#C3C3C3"
+                />
+                <path
+                  id="Vector_5"
+                  opacity="0.2"
+                  d="M436.66 190.18V210.53H417.66C423.613 203.543 429.947 196.76 436.66 190.18Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_6"
+                  opacity="0.2"
+                  d="M471.53 185.02H446.02V210.53H471.53V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_7"
+                  opacity="0.2"
+                  d="M506.39 185.02H480.88V210.53H506.39V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_8"
+                  opacity="0.2"
+                  d="M541.26 185.02H515.75V210.53H541.26V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_9"
+                  opacity="0.2"
+                  d="M576.12 185.02H550.61V210.53H576.12V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_10"
+                  opacity="0.2"
+                  d="M610.99 185.02H585.48V210.53H610.99V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_11"
+                  d="M645.86 185.02H620.35V210.53H645.86V185.02Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_12"
+                  opacity="0.2"
+                  d="M680.72 185.02H655.21V210.53H680.72V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_13"
+                  opacity="0.2"
+                  d="M715.59 185.02H690.08V210.53H715.59V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_14"
+                  opacity="0.2"
+                  d="M750.45 185.02H724.94V210.53H750.45V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_15"
+                  d="M785.32 185.02H759.81V210.53H785.32V185.02Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_16"
+                  opacity="0.2"
+                  d="M820.19 185.02H794.68V210.53H820.19V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_17"
+                  opacity="0.2"
+                  d="M855.05 185.02H829.54V210.53H855.05V185.02Z"
+                  fill="#6A6A6A"
+                />
+                <path
+                  id="Vector_18"
+                  opacity="0.2"
+                  d="M889.92 185.02H864.41V210.53H889.92V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_19"
+                  opacity="0.2"
+                  d="M924.79 185.02H899.28V210.53H924.79V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_20"
+                  opacity="0.2"
+                  d="M959.65 185.02H934.14V210.53H959.65V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_21"
+                  opacity="0.2"
+                  d="M994.52 185.02H969.01V210.53H994.52V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_22"
+                  d="M1029.38 185.02H1003.87V210.53H1029.38V185.02Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_23"
+                  d="M1064.25 185.02H1038.74V210.53H1064.25V185.02Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_24"
+                  opacity="0.2"
+                  d="M1099.12 185.02H1073.61V210.53H1099.12V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_25"
+                  opacity="0.2"
+                  d="M1133.98 185.02H1108.47V210.53H1133.98V185.02Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_26"
+                  d="M1168.85 185.02H1143.34V210.53H1168.85V185.02Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_27"
+                  d="M1203.71 185.02H1178.2V210.53H1203.71V185.02Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_28"
+                  d="M401.8 230.74V242.84H393.62C396.22 238.72 398.947 234.687 401.8 230.74Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_29"
+                  opacity="0.2"
+                  d="M436.66 217.33H411.15V242.84H436.66V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_30"
+                  d="M471.53 217.33H446.02V242.84H471.53V217.33Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_31"
+                  opacity="0.2"
+                  d="M506.39 217.33H480.88V242.84H506.39V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_32"
+                  opacity="0.7"
+                  d="M541.26 217.33H515.75V242.84H541.26V217.33Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_33"
+                  opacity="0.2"
+                  d="M576.12 217.33H550.61V242.84H576.12V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_34"
+                  opacity="0.4"
+                  d="M610.99 217.33H585.48V242.84H610.99V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_35"
+                  d="M645.86 217.33H620.35V242.84H645.86V217.33Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_36"
+                  opacity="0.4"
+                  d="M680.72 217.33H655.21V242.84H680.72V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_37"
+                  opacity="0.2"
+                  d="M715.59 217.33H690.08V242.84H715.59V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_38"
+                  opacity="0.4"
+                  d="M750.45 217.33H724.94V242.84H750.45V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_39"
+                  d="M785.32 217.33H759.81V242.84H785.32V217.33Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_40"
+                  opacity="0.4"
+                  d="M820.19 217.33H794.68V242.84H820.19V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_41"
+                  opacity="0.4"
+                  d="M855.05 217.33H829.54V242.84H855.05V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_42"
+                  opacity="0.2"
+                  d="M889.92 217.33H864.41V242.84H889.92V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_43"
+                  opacity="0.4"
+                  d="M924.79 217.33H899.28V242.84H924.79V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_44"
+                  opacity="0.4"
+                  d="M959.65 217.33H934.14V242.84H959.65V217.33Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_45"
+                  opacity="0.2"
+                  d="M994.52 217.33H969.01V242.84H994.52V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_46"
+                  opacity="0.2"
+                  d="M1029.38 217.33H1003.87V242.84H1029.38V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_47"
+                  opacity="0.4"
+                  d="M1064.25 217.33H1038.74V242.84H1064.25V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_48"
+                  opacity="0.2"
+                  d="M1099.12 217.33H1073.61V242.84H1099.12V217.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_49"
+                  d="M1133.98 217.33H1108.47V242.84H1133.98V217.33Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_50"
+                  d="M1168.85 217.33H1143.34V242.84H1168.85V217.33Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_51"
+                  d="M1203.71 217.33H1178.2V242.84H1203.71V217.33Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_52"
+                  opacity="0.2"
+                  d="M332.06 257.33V275.16H306.55V266.45C314.804 262.754 323.333 259.704 332.06 257.33Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_53"
+                  opacity="0.2"
+                  d="M366.93 251.57V275.16H341.42V255.07L366.93 251.57Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_54"
+                  d="M401.79 249.65H376.28V275.16H401.79V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_55"
+                  opacity="0.7"
+                  d="M436.66 249.65H411.15V275.16H436.66V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_56"
+                  d="M471.53 249.65H446.02V275.16H471.53V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_57"
+                  opacity="0.7"
+                  d="M506.39 249.65H480.88V275.16H506.39V249.65Z"
+                  fill="#9C9C9C"
+                />
+                <path
+                  id="Vector_58"
+                  opacity="0.7"
+                  d="M541.26 249.65H515.75V275.16H541.26V249.65Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_59"
+                  opacity="0.2"
+                  d="M576.12 249.65H550.61V275.16H576.12V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_60"
+                  opacity="0.4"
+                  d="M610.99 249.65H585.48V275.16H610.99V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_61"
+                  opacity="0.4"
+                  d="M645.86 249.65H620.35V275.16H645.86V249.65Z"
+                  fill="#747474"
+                />
+                <path
+                  id="Vector_62"
+                  d="M680.72 249.65H655.21V275.16H680.72V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_63"
+                  opacity="0.2"
+                  d="M715.59 249.65H690.08V275.16H715.59V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_64"
+                  opacity="0.4"
+                  d="M750.45 249.65H724.94V275.16H750.45V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_65"
+                  d="M785.32 249.65H759.81V275.16H785.32V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_66"
+                  opacity="0.2"
+                  d="M820.19 249.65H794.68V275.16H820.19V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_67"
+                  opacity="0.4"
+                  d="M855.05 249.65H829.54V275.16H855.05V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_68"
+                  opacity="0.2"
+                  d="M889.92 249.65H864.41V275.16H889.92V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_69"
+                  d="M924.79 249.65H899.28V275.16H924.79V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_70"
+                  opacity="0.2"
+                  d="M959.65 249.65H934.14V275.16H959.65V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_71"
+                  opacity="0.7"
+                  d="M994.52 249.65H969.01V275.16H994.52V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_72"
+                  opacity="0.7"
+                  d="M1029.38 249.65H1003.87V275.16H1029.38V249.65Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_73"
+                  opacity="0.4"
+                  d="M1064.25 249.65H1038.74V275.16H1064.25V249.65Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_74"
+                  opacity="0.2"
+                  d="M1099.12 249.65H1073.61V275.16H1099.12V249.65Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_75"
+                  d="M1133.98 249.65H1108.47V275.16H1133.98V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_76"
+                  d="M1168.85 249.65H1143.34V275.16H1168.85V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_77"
+                  d="M1203.71 249.65H1178.2V275.16H1203.71V249.65Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_78"
+                  opacity="0.2"
+                  d="M332.06 281.96H306.55V307.47H332.06V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_79"
+                  opacity="0.2"
+                  d="M366.93 281.96H341.42V307.47H366.93V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_80"
+                  opacity="0.2"
+                  d="M401.79 281.96H376.28V307.47H401.79V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_81"
+                  opacity="0.2"
+                  d="M436.66 281.96H411.15V307.47H436.66V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_82"
+                  d="M471.53 281.96H446.02V307.47H471.53V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_83"
+                  opacity="0.7"
+                  d="M506.39 281.96H480.88V307.47H506.39V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_84"
+                  opacity="0.7"
+                  d="M541.26 281.96H515.75V307.47H541.26V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_85"
+                  opacity="0.2"
+                  d="M576.12 281.96H550.61V307.47H576.12V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_86"
+                  opacity="0.2"
+                  d="M610.99 281.96H585.48V307.47H610.99V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_87"
+                  opacity="0.4"
+                  d="M645.86 281.96H620.35V307.47H645.86V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_88"
+                  opacity="0.4"
+                  d="M680.72 281.96H655.21V307.47H680.72V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_89"
+                  d="M715.59 281.96H690.08V307.47H715.59V281.96Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_90"
+                  opacity="0.2"
+                  d="M750.45 281.96H724.94V307.47H750.45V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_91"
+                  opacity="0.4"
+                  d="M785.32 281.96H759.81V307.47H785.32V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_92"
+                  opacity="0.4"
+                  d="M820.19 281.96H794.68V307.47H820.19V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_93"
+                  opacity="0.4"
+                  d="M855.05 281.96H829.54V307.47H855.05V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_94"
+                  opacity="0.4"
+                  d="M889.92 281.96H864.41V307.47H889.92V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_95"
+                  opacity="0.2"
+                  d="M924.79 281.96H899.28V307.47H924.79V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_96"
+                  opacity="0.2"
+                  d="M959.65 281.96H934.14V307.47H959.65V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_97"
+                  opacity="0.2"
+                  d="M994.52 281.96H969.01V307.47H994.52V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_98"
+                  opacity="0.2"
+                  d="M1029.38 281.96H1003.87V307.47H1029.38V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_99"
+                  opacity="0.7"
+                  d="M1064.25 281.96H1038.74V307.47H1064.25V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_100"
+                  opacity="0.7"
+                  d="M1099.12 281.96H1073.61V307.47H1099.12V281.96Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_101"
+                  opacity="0.4"
+                  d="M1133.98 281.96H1108.47V307.47H1133.98V281.96Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_102"
+                  opacity="0.2"
+                  d="M1168.85 281.96H1143.34V307.47H1168.85V281.96Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_103"
+                  d="M1203.71 281.96H1178.2V307.47H1203.71V281.96Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_104"
+                  opacity="0.2"
+                  d="M332.06 314.28H306.55V339.79H332.06V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_105"
+                  opacity="0.2"
+                  d="M366.93 314.28H341.42V339.79H366.93V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_106"
+                  opacity="0.4"
+                  d="M401.79 314.28H376.28V339.79H401.79V314.28Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_107"
+                  opacity="0.2"
+                  d="M436.66 314.28H411.15V339.79H436.66V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_108"
+                  opacity="0.2"
+                  d="M471.53 314.28H446.02V339.79H471.53V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_109"
+                  opacity="0.7"
+                  d="M506.39 314.28H480.88V339.79H506.39V314.28Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_110"
+                  opacity="0.7"
+                  d="M541.26 314.28H515.75V339.79H541.26V314.28Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_111"
+                  opacity="0.2"
+                  d="M576.12 314.28H550.61V339.79H576.12V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_112"
+                  opacity="0.2"
+                  d="M610.99 314.28H585.48V339.79H610.99V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_113"
+                  opacity="0.4"
+                  d="M645.86 314.28H620.35V339.79H645.86V314.28Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_114"
+                  d="M680.72 314.28H655.21V339.79H680.72V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_115"
+                  opacity="0.2"
+                  d="M715.59 314.28H690.08V339.79H715.59V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_116"
+                  d="M750.45 314.28H724.94V339.79H750.45V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_117"
+                  d="M785.32 314.28H759.81V339.79H785.32V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_118"
+                  d="M820.19 314.28H794.68V339.79H820.19V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_119"
+                  opacity="0.2"
+                  d="M855.05 314.28H829.54V339.79H855.05V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_120"
+                  d="M889.92 314.28H864.41V339.79H889.92V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_121"
+                  opacity="0.2"
+                  d="M924.79 314.28H899.28V339.79H924.79V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_122"
+                  opacity="0.2"
+                  d="M959.65 314.28H934.14V339.79H959.65V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_123"
+                  opacity="0.2"
+                  d="M994.52 314.28H969.01V339.79H994.52V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_124"
+                  opacity="0.2"
+                  d="M1029.38 314.28H1003.87V339.79H1029.38V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_125"
+                  opacity="0.2"
+                  d="M1064.25 314.28H1038.74V339.79H1064.25V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_126"
+                  opacity="0.7"
+                  d="M1099.12 314.28H1073.61V339.79H1099.12V314.28Z"
+                  fill="#9C9C9C"
+                />
+                <path
+                  id="Vector_127"
+                  opacity="0.2"
+                  d="M1133.98 314.28H1108.47V339.79H1133.98V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_128"
+                  opacity="0.2"
+                  d="M1168.85 314.28H1143.34V339.79H1168.85V314.28Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_129"
+                  d="M1203.71 314.28H1178.2V339.79H1203.71V314.28Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_130"
+                  opacity="0.2"
+                  d="M332.06 346.59H306.55V372.1H332.06V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_131"
+                  opacity="0.2"
+                  d="M366.93 346.59H341.42V372.1H366.93V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_132"
+                  opacity="0.2"
+                  d="M401.79 346.59H376.28V372.1H401.79V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_133"
+                  opacity="0.4"
+                  d="M436.66 346.59H411.15V372.1H436.66V346.59Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_134"
+                  opacity="0.2"
+                  d="M471.53 346.59H446.02V372.1H471.53V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_135"
+                  opacity="0.2"
+                  d="M506.39 346.59H480.88V372.1H506.39V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_136"
+                  opacity="0.7"
+                  d="M541.26 346.59H515.75V372.1H541.26V346.59Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_137"
+                  opacity="0.2"
+                  d="M576.12 346.59H550.61V372.1H576.12V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_138"
+                  opacity="0.2"
+                  d="M610.99 346.59H585.48V372.1H610.99V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_139"
+                  opacity="0.2"
+                  d="M645.86 346.59H620.35V372.1H645.86V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_140"
+                  d="M680.72 346.59H655.21V372.1H680.72V346.59Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_141"
+                  opacity="0.2"
+                  d="M715.59 346.59H690.08V372.1H715.59V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_142"
+                  d="M750.45 346.59H724.94V372.1H750.45V346.59Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_143"
+                  d="M785.32 346.59H759.81V372.1H785.32V346.59Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_144"
+                  opacity="0.2"
+                  d="M820.19 346.59H794.68V372.1H820.19V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_145"
+                  opacity="0.2"
+                  d="M855.05 346.59H829.54V372.1H855.05V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_146"
+                  opacity="0.2"
+                  d="M889.92 346.59H864.41V372.1H889.92V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_147"
+                  opacity="0.2"
+                  d="M924.79 346.59H899.28V372.1H924.79V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_148"
+                  opacity="0.2"
+                  d="M959.65 346.59H934.14V372.1H959.65V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_149"
+                  opacity="0.2"
+                  d="M994.52 346.59H969.01V372.1H994.52V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_150"
+                  opacity="0.2"
+                  d="M1029.38 346.59H1003.87V372.1H1029.38V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_151"
+                  opacity="0.2"
+                  d="M1064.25 346.59H1038.74V372.1H1064.25V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_152"
+                  opacity="0.2"
+                  d="M1099.12 346.59H1073.61V372.1H1099.12V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_153"
+                  opacity="0.2"
+                  d="M1133.98 346.59H1108.47V372.1H1133.98V346.59Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_154"
+                  opacity="0.4"
+                  d="M1168.85 346.59H1143.34V372.1H1168.85V346.59Z"
+                  fill="#898989"
+                />
+                <path
+                  id="Vector_155"
+                  d="M1203.71 346.59H1178.2V372.1H1203.71V346.59Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_156"
+                  opacity="0.7"
+                  d="M332.06 378.91H306.55V404.42H332.06V378.91Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_157"
+                  opacity="0.7"
+                  d="M366.93 378.91H341.42V404.42H366.93V378.91Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_158"
+                  opacity="0.7"
+                  d="M401.79 378.91H376.28V404.42H401.79V378.91Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_159"
+                  opacity="0.7"
+                  d="M436.66 378.91H411.15V404.42H436.66V378.91Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_160"
+                  opacity="0.7"
+                  d="M471.53 378.91H446.02V404.42H471.53V378.91Z"
+                  fill="#707070"
+                />
+                <path
+                  id="Vector_161"
+                  opacity="0.2"
+                  d="M506.39 378.91H480.88V404.42H506.39V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_162"
+                  opacity="0.2"
+                  d="M541.26 378.91H515.75V404.42H541.26V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_163"
+                  opacity="0.2"
+                  d="M576.12 378.91H550.61V404.42H576.12V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_164"
+                  opacity="0.2"
+                  d="M610.99 378.91H585.48V404.42H610.99V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_165"
+                  opacity="0.2"
+                  d="M645.86 378.91H620.35V404.42H645.86V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_166"
+                  opacity="0.2"
+                  d="M680.72 378.91H655.21V404.42H680.72V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_167"
+                  d="M715.59 378.91H690.08V404.42H715.59V378.91Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_168"
+                  opacity="0.2"
+                  d="M750.45 378.91H724.94V404.42H750.45V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_169"
+                  opacity="0.2"
+                  d="M785.32 378.91H759.81V404.42H785.32V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_170"
+                  opacity="0.2"
+                  d="M820.19 378.91H794.68V404.42H820.19V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_171"
+                  d="M855.05 378.91H829.54V404.42H855.05V378.91Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_172"
+                  opacity="0.2"
+                  d="M889.92 378.91H864.41V404.42H889.92V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_173"
+                  opacity="0.2"
+                  d="M924.79 378.91H899.28V404.42H924.79V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_174"
+                  opacity="0.2"
+                  d="M959.65 378.91H934.14V404.42H959.65V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_175"
+                  opacity="0.2"
+                  d="M994.52 378.91H969.01V404.42H994.52V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_176"
+                  opacity="0.2"
+                  d="M1029.38 378.91H1003.87V404.42H1029.38V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_177"
+                  opacity="0.2"
+                  d="M1064.25 378.91H1038.74V404.42H1064.25V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_178"
+                  opacity="0.2"
+                  d="M1099.12 378.91H1073.61V404.42H1099.12V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_179"
+                  opacity="0.2"
+                  d="M1133.98 378.91H1108.47V404.42H1133.98V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_180"
+                  opacity="0.2"
+                  d="M1168.85 378.91H1143.34V404.42H1168.85V378.91Z"
+                  fill="#A6A6A6"
+                />
+                <path
+                  id="Vector_181"
+                  d="M1203.71 378.91H1178.2V404.42H1203.71V378.91Z"
+                  fill="#3F3D56"
+                />
+              </g>
+              <g id="cat" filter="url(#filter0_d)">
+                <path
+                  id="Vector_182"
+                  d="M706.004 357.284C706.004 357.284 758.732 355.924 782.446 370.533C782.446 370.533 803.918 337.51 819.206 340.16C834.495 342.81 829.874 399.751 829.874 399.751L836.126 484.823C836.126 484.823 902.921 674.875 790.195 749.823C677.468 824.771 542.25 696.349 553.732 630.099C565.215 563.849 619.641 431.552 619.641 431.552C619.641 431.552 669.651 324.737 681.61 316.311C693.569 307.885 706.004 357.284 706.004 357.284Z"
+                  fill="#87B242"
+                />
+                <path
+                  id="eyeright"
+                  d="M792.884 473.602C798.358 471.965 801.468 466.201 799.832 460.728C798.195 455.254 792.432 452.144 786.958 453.78C781.484 455.416 778.374 461.18 780.01 466.654C781.647 472.127 787.41 475.238 792.884 473.602Z"
+                  fill="black"
+                />
+                <path
+                  id="eyeleft"
+                  d="M675.672 453.286C681.146 451.649 684.257 445.886 682.62 440.412C680.984 434.938 675.22 431.828 669.746 433.464C664.273 435.1 661.162 440.864 662.798 446.338C664.435 451.812 670.199 454.922 675.672 453.286Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_183"
+                  d="M747.385 466.817C748.361 461.188 742.307 455.438 733.863 453.975C725.42 452.511 717.784 455.888 716.808 461.517C715.833 467.146 721.886 472.896 730.33 474.359C738.774 475.823 746.409 472.446 747.385 466.817Z"
+                  fill="black"
+                />
+                <path
+                  id="wisker1r"
+                  d="M820.376 466.401L820.619 471.57L868.251 469.337L868.009 464.169L820.376 466.401Z"
+                  fill="black"
+                />
+                <path
+                  id="wisker2r"
+                  d="M816.9 486.77L817.029 491.94L869.758 490.621L869.629 485.452L816.9 486.77Z"
+                  fill="black"
+                />
+                <path
+                  id="wisker1l"
+                  d="M591.846 400.678L589.136 405.078L636.564 434.296L639.275 429.896L591.846 400.678Z"
+                  fill="black"
+                />
+                <path
+                  id="wisker2l"
+                  d="M571.61 423.258L569.962 428.16L634.446 449.835L636.094 444.933L571.61 423.258Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_184"
+                  opacity="0.1"
+                  d="M684.305 612.497C684.305 612.497 706.384 695.699 658.723 694.2C611.062 692.701 644.614 625.28 644.614 625.28C644.614 625.28 643.619 603.359 632.493 600.203"
+                  fill="black"
+                />
+                <path
+                  id="Vector_185"
+                  opacity="0.1"
+                  d="M727.448 618.049C727.448 618.049 672.557 684.36 716.466 702.956C760.375 721.553 758.139 646.279 758.139 646.279C758.139 646.279 768.221 626.788 779.646 628.581"
+                  fill="black"
+                />
+                <path
+                  id="Vector_186"
+                  d="M680.508 609.623C680.508 609.623 702.587 692.825 654.925 691.325C607.264 689.826 640.816 622.406 640.816 622.406C640.816 622.406 639.822 600.485 628.696 597.329"
+                  fill="#87B242"
+                />
+                <path
+                  id="Vector_187"
+                  d="M731.231 615.374C731.231 615.374 676.34 681.684 720.249 700.281C764.158 718.878 761.921 643.603 761.921 643.603C761.921 643.603 772.004 624.113 783.429 625.906"
+                  fill="#87B242"
+                />
+                <path
+                  id="Vector_188"
+                  opacity="0.5"
+                  d="M642.76 672.783L640.154 687.819L640.959 687.958L643.565 672.923L642.76 672.783Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_189"
+                  opacity="0.5"
+                  d="M655.636 675.015L653.03 690.051L653.835 690.19L656.441 675.155L655.636 675.015Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_190"
+                  opacity="0.5"
+                  d="M649.479 669.007L645.832 690.053L646.636 690.192L650.284 669.146L649.479 669.007Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_191"
+                  opacity="0.5"
+                  d="M727.012 684.071L724.406 699.106L725.211 699.246L727.817 684.21L727.012 684.071Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_192"
+                  opacity="0.5"
+                  d="M739.888 686.302L737.282 701.338L738.087 701.478L740.693 686.442L739.888 686.302Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_193"
+                  opacity="0.5"
+                  d="M733.732 680.294L730.084 701.34L730.888 701.48L734.536 680.434L733.732 680.294Z"
+                  fill="#58555D"
+                />
+                <path
+                  id="Vector_194"
+                  opacity="0.1"
+                  d="M708.1 527.164C694.754 524.859 681.632 521.413 668.876 516.863C628.669 502.486 602.444 479.424 601.499 478.574L604.698 470.649C604.918 470.847 633.631 494.78 672.295 508.527C707.884 521.18 771.316 530.227 841.595 505.963L844.532 514.47C793.524 532.081 742.855 533.188 708.1 527.164Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_195"
+                  d="M708.976 532.904L708.688 532.495C709.431 532.112 710.075 531.563 710.57 530.89C711.065 530.218 711.398 529.439 711.543 528.616C711.688 527.794 711.64 526.948 711.404 526.147C711.168 525.346 710.749 524.61 710.182 523.997L710.556 523.666C711.171 524.331 711.624 525.129 711.881 525.997C712.139 526.865 712.193 527.781 712.04 528.674C711.888 529.566 711.532 530.412 711.001 531.145C710.469 531.879 709.777 532.48 708.976 532.904Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_196"
+                  opacity="0.1"
+                  d="M708.976 532.904L708.688 532.495C709.431 532.112 710.075 531.563 710.57 530.89C711.065 530.218 711.398 529.439 711.543 528.616C711.688 527.794 711.64 526.948 711.404 526.147C711.168 525.346 710.749 524.61 710.182 523.997L710.556 523.666C711.171 524.331 711.624 525.129 711.881 525.997C712.139 526.865 712.193 527.781 712.04 528.674C711.888 529.566 711.532 530.412 711.001 531.145C710.469 531.879 709.777 532.48 708.976 532.904Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_197"
+                  d="M841.937 503.992C771.657 528.256 708.226 519.21 672.637 506.557C633.973 492.809 605.26 468.876 605.039 468.678L599.021 475.371C599.966 476.221 629.011 500.515 669.217 514.893C681.973 519.442 695.096 522.889 708.441 525.193C743.196 531.217 793.866 530.11 844.874 512.5L841.937 503.992ZM710.198 524.817C710.003 524.783 709.823 524.692 709.68 524.556C709.536 524.42 709.437 524.244 709.393 524.051C709.35 523.858 709.365 523.656 709.436 523.472C709.507 523.287 709.631 523.128 709.793 523.014C709.955 522.9 710.147 522.837 710.344 522.832C710.542 522.827 710.737 522.881 710.904 522.987C711.071 523.092 711.203 523.245 711.283 523.426C711.363 523.607 711.388 523.808 711.354 524.002C711.332 524.132 711.284 524.256 711.214 524.366C711.144 524.477 711.052 524.573 710.945 524.649C710.838 524.725 710.716 524.779 710.588 524.807C710.46 524.836 710.328 524.839 710.198 524.817Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_198"
+                  d="M828.369 504.703C678.892 561.002 613.533 473.555 613.533 473.555L828.369 504.703Z"
+                  fill="#87B242"
+                />
+                <path
+                  id="Vector_199"
+                  d="M708.628 532.843C708.016 532.175 707.566 531.376 707.313 530.506C707.059 529.637 707.009 528.721 707.166 527.829C707.322 526.937 707.682 526.093 708.216 525.362C708.751 524.631 709.446 524.032 710.248 523.612L710.49 524.05C709.749 524.436 709.107 524.989 708.615 525.664C708.123 526.339 707.794 527.119 707.653 527.942C707.513 528.766 707.564 529.611 707.804 530.411C708.044 531.211 708.466 531.945 709.036 532.555L708.628 532.843Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_200"
+                  d="M698.94 537.074C698.532 539.426 699.075 541.844 700.45 543.795C701.825 545.746 703.918 547.071 706.27 547.479C708.622 547.887 711.04 547.343 712.991 545.968C714.942 544.594 716.267 542.5 716.675 540.148V540.148C717.083 537.796 716.539 535.379 715.165 533.428C713.79 531.476 711.696 530.151 709.344 529.743V529.743C706.992 529.336 704.575 529.879 702.624 531.254C700.672 532.629 699.347 534.722 698.94 537.074V537.074ZM708.576 534.177C708.283 534.127 708.013 533.99 707.798 533.786C707.583 533.581 707.434 533.318 707.368 533.028C707.303 532.739 707.326 532.437 707.432 532.16C707.539 531.883 707.726 531.644 707.968 531.473C708.211 531.302 708.498 531.207 708.795 531.2C709.091 531.192 709.384 531.273 709.634 531.432C709.885 531.591 710.083 531.82 710.203 532.091C710.323 532.362 710.361 532.663 710.31 532.955C710.276 533.15 710.205 533.335 710.099 533.502C709.994 533.668 709.857 533.812 709.696 533.926C709.535 534.039 709.353 534.12 709.161 534.163C708.969 534.206 708.77 534.211 708.576 534.177V534.177Z"
+                  fill="black"
+                />
+                <path
+                  id="Vector_201"
+                  opacity="0.1"
+                  d="M697.954 536.903C697.501 539.517 698.105 542.203 699.633 544.371C701.16 546.539 703.486 548.011 706.099 548.464V548.464C708.713 548.917 711.399 548.313 713.567 546.786C715.735 545.258 717.207 542.932 717.66 540.319V540.319C718.113 537.706 717.51 535.02 715.982 532.852C714.455 530.684 712.128 529.211 709.515 528.758V528.758C706.902 528.305 704.216 528.909 702.048 530.436C699.88 531.964 698.407 534.29 697.954 536.903V536.903ZM708.661 533.685C708.336 533.628 708.036 533.477 707.797 533.25C707.558 533.022 707.392 532.73 707.32 532.408C707.247 532.086 707.272 531.75 707.391 531.443C707.509 531.135 707.716 530.87 707.986 530.68C708.255 530.49 708.575 530.384 708.905 530.376C709.234 530.368 709.559 530.458 709.837 530.634C710.116 530.81 710.336 531.065 710.469 531.367C710.603 531.668 710.644 532.002 710.588 532.327C710.513 532.763 710.267 533.15 709.906 533.405C709.544 533.659 709.097 533.76 708.661 533.685L708.661 533.685Z"
+                  fill="url(#paint0_linear)"
+                />
+              </g>
+              <path
+                id="tail"
+                d="M851.135 685.549C861.014 696.063 874.024 703.049 887.119 709.104C913.083 721.109 942.919 730.242 969.95 720.882C979.822 717.464 988.711 711.752 997.493 706.093C1015.22 694.669 1033.13 683.094 1047.68 667.826C1063.67 651.011 1075.02 630.333 1080.61 607.816C1081.49 604.444 1081.12 600.868 1079.56 597.75C1076.78 592.405 1072.48 592.652 1068.57 593.41C1044.87 598.01 1028.63 619.001 1011.86 636.368C995.047 653.772 975.807 668.656 954.736 680.557C945.795 685.605 935.772 690.234 925.631 688.625C919.419 687.639 913.832 684.395 908.408 681.211C900.297 676.449 891.624 671.042 888.296 662.246C884.887 653.238 888.405 640.654 882.309 632.743C876.277 624.916 859.641 623.887 850.762 627.495C826.717 637.268 837.911 671.472 851.135 685.549Z"
+                fill="#87B242"
+              />
+              <path
+                id="wool"
+                d="M852.871 787.752C852 801.391 857.752 816.326 868.976 819.164C875.459 820.803 881.757 818.055 887.847 815.397C894.522 812.485 900.287 809.969 905.087 813.483C907.272 815.082 908.944 817.899 910.424 820.703C912.352 824.357 914.138 828.281 915.865 832.077C918.849 838.635 921.936 845.416 926 851.432C933.99 863.255 944.556 869.173 954.264 867.264C962.652 865.615 969.026 858.7 975.19 852.012C981.511 845.155 987.482 838.677 994.866 838.759C1004.91 838.869 1012.23 851.182 1018.69 862.046L1019.7 863.741C1027.62 876.997 1041.26 889.674 1053.66 881.774C1057.98 879.017 1060.74 874.456 1063.4 870.046C1065.02 867.076 1066.95 864.362 1069.14 861.968C1077.29 853.877 1089.51 857.854 1094.39 859.939C1098.1 861.524 1101.8 863.607 1105.38 865.622C1110.68 868.597 1116.15 871.674 1122.03 873.436L1123 873.725C1137.17 877.971 1137.7 877.962 1151.21 873.209L1152.9 872.617L1151.22 865.721L1149.53 866.316C1137.3 870.617 1137.3 870.617 1124.41 866.758L1123.45 866.468C1118.12 864.873 1113.15 862.077 1107.88 859.116C1104.17 857.03 1100.34 854.873 1096.36 853.172C1084.04 847.904 1072.73 849.086 1065.35 856.416C1062.77 859.186 1060.49 862.342 1058.58 865.808C1056.21 869.732 1053.98 873.439 1050.86 875.423C1041.22 881.567 1029.77 868.341 1024.53 859.557L1023.52 857.873C1016.59 846.222 1007.97 831.722 994.899 831.579C985.208 831.472 978.088 839.196 971.202 846.666C965.419 852.94 959.956 858.865 953.285 860.178C944.363 861.932 935.721 854.473 930.608 846.907C926.888 841.401 924.067 835.202 921.08 828.638C919.307 824.742 917.474 820.714 915.441 816.861C913.571 813.319 911.395 809.715 908.161 807.347C900.922 802.048 893.237 805.401 885.805 808.644C880.251 811.068 875.005 813.357 870.178 812.136C861.454 809.931 857.366 796.196 859.151 785.251C860.613 776.295 864.611 768.387 868.842 760.015C870.211 757.308 871.627 754.508 872.938 751.689C880.087 736.305 881.74 722.41 877.719 711.504C876.341 708.071 874.662 704.826 872.709 701.824C871.205 699.486 869.863 697.003 868.697 694.4C866.491 688.472 866.213 681.767 867.921 675.62C869.629 669.474 873.196 664.337 877.912 661.235C878.815 660.7 879.787 660.216 880.815 659.705C884.08 658.081 887.78 656.24 890.073 652.093C892.474 647.751 892.388 642.431 892.325 638.545L891.669 598.406L885.719 598.523L886.375 638.661C886.436 642.469 886.384 645.805 885.119 648.094C883.827 650.43 881.254 651.71 878.529 653.066C877.459 653.598 876.352 654.149 875.275 654.787C869.137 658.731 864.488 665.359 862.277 673.317C860.067 681.274 860.461 689.96 863.379 697.601C864.69 700.564 866.205 703.389 867.908 706.046C869.605 708.64 871.071 711.442 872.283 714.405C876.362 725.46 872.065 738.863 867.744 748.16C866.487 750.865 865.099 753.608 863.759 756.261C859.441 764.801 854.978 773.631 853.312 783.841C853.102 785.133 852.955 786.439 852.871 787.752V787.752Z"
+                fill="#87B242"
+              />
+              <g id="computer">
+                <path
+                  id="Vector_202"
+                  d="M912.452 573.431H746.01V570H670.538V573.431H503.409C500.423 573.431 497.559 574.617 495.448 576.728C493.336 578.84 492.15 581.703 492.15 584.689V812.601C492.15 815.587 493.336 818.45 495.448 820.562C497.559 822.673 500.423 823.859 503.409 823.859H912.452C915.438 823.859 918.302 822.673 920.414 820.562C922.525 818.45 923.711 815.587 923.711 812.601V584.689C923.711 583.211 923.42 581.747 922.854 580.381C922.288 579.015 921.459 577.774 920.414 576.728C919.368 575.683 918.127 574.853 916.761 574.288C915.395 573.722 913.931 573.431 912.452 573.431V573.431Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="Vector_203"
+                  d="M948.41 829.065V835.135C948.413 836.801 948.105 838.452 947.5 840.005C947.231 840.697 946.907 841.366 946.53 842.005C945.338 844.005 943.647 845.662 941.622 846.812C939.597 847.962 937.309 848.566 934.98 848.565H488.43C486.101 848.566 483.813 847.962 481.788 846.812C479.763 845.662 478.072 844.005 476.88 842.005C476.503 841.365 476.179 840.697 475.91 840.005C475.305 838.452 474.997 836.801 475 835.135V829.065C475 827.301 475.347 825.554 476.021 823.925C476.696 822.295 477.685 820.814 478.933 819.567C480.18 818.32 481.66 817.331 483.29 816.656C484.92 815.981 486.666 815.634 488.43 815.635H514.17V812.805C514.17 812.731 514.184 812.658 514.212 812.59C514.24 812.522 514.282 812.461 514.334 812.409C514.386 812.356 514.448 812.315 514.516 812.287C514.584 812.259 514.656 812.245 514.73 812.245H528.16C528.234 812.245 528.306 812.259 528.374 812.287C528.442 812.315 528.504 812.356 528.556 812.409C528.608 812.461 528.65 812.522 528.678 812.59C528.706 812.658 528.72 812.731 528.72 812.805V815.635H537.11V812.805C537.11 812.731 537.124 812.658 537.152 812.59C537.181 812.522 537.222 812.461 537.274 812.409C537.326 812.356 537.388 812.315 537.456 812.287C537.524 812.259 537.596 812.245 537.67 812.245H551.1C551.174 812.245 551.246 812.259 551.314 812.287C551.382 812.315 551.444 812.356 551.496 812.409C551.548 812.461 551.59 812.522 551.618 812.59C551.646 812.658 551.66 812.731 551.66 812.805V815.635H560.06V812.805C560.06 812.731 560.074 812.658 560.102 812.59C560.131 812.522 560.172 812.461 560.224 812.409C560.276 812.356 560.338 812.315 560.406 812.287C560.474 812.259 560.546 812.245 560.62 812.245H574.05C574.124 812.245 574.196 812.259 574.264 812.287C574.332 812.315 574.394 812.356 574.446 812.409C574.498 812.461 574.54 812.522 574.568 812.59C574.596 812.658 574.61 812.731 574.61 812.805V815.635H583V812.805C583 812.731 583.014 812.658 583.042 812.59C583.071 812.522 583.112 812.461 583.164 812.409C583.216 812.356 583.278 812.315 583.346 812.287C583.414 812.259 583.486 812.245 583.56 812.245H596.99C597.064 812.245 597.136 812.259 597.204 812.287C597.272 812.315 597.334 812.356 597.386 812.409C597.438 812.461 597.48 812.522 597.508 812.59C597.536 812.658 597.55 812.731 597.55 812.805V815.635H605.94V812.805C605.94 812.731 605.954 812.658 605.982 812.59C606.011 812.522 606.052 812.461 606.104 812.409C606.156 812.356 606.218 812.315 606.286 812.287C606.354 812.259 606.426 812.245 606.5 812.245H619.93C620.004 812.245 620.076 812.259 620.144 812.287C620.212 812.315 620.274 812.356 620.326 812.409C620.378 812.461 620.42 812.522 620.448 812.59C620.476 812.658 620.49 812.731 620.49 812.805V815.635H628.89V812.805C628.89 812.731 628.904 812.658 628.932 812.59C628.961 812.522 629.002 812.461 629.054 812.409C629.106 812.356 629.168 812.315 629.236 812.287C629.304 812.259 629.376 812.245 629.45 812.245H642.88C642.954 812.245 643.026 812.259 643.094 812.287C643.162 812.315 643.224 812.356 643.276 812.409C643.328 812.461 643.37 812.522 643.398 812.59C643.426 812.658 643.44 812.731 643.44 812.805V815.635H651.83V812.805C651.83 812.731 651.844 812.658 651.872 812.59C651.901 812.522 651.942 812.461 651.994 812.409C652.046 812.356 652.108 812.315 652.176 812.287C652.244 812.259 652.316 812.245 652.39 812.245H757.59C757.664 812.245 757.736 812.259 757.804 812.287C757.872 812.315 757.934 812.356 757.986 812.409C758.038 812.461 758.08 812.522 758.108 812.59C758.136 812.658 758.15 812.731 758.15 812.805V815.635H766.55V812.805C766.55 812.731 766.564 812.658 766.592 812.59C766.621 812.522 766.662 812.461 766.714 812.409C766.766 812.356 766.828 812.315 766.896 812.287C766.964 812.259 767.036 812.245 767.11 812.245H780.54C780.688 812.246 780.83 812.306 780.934 812.41C781.039 812.515 781.099 812.657 781.1 812.805V815.635H789.49V812.805C789.49 812.731 789.504 812.658 789.532 812.59C789.56 812.522 789.602 812.461 789.654 812.409C789.706 812.356 789.768 812.315 789.836 812.287C789.904 812.259 789.976 812.245 790.05 812.245H803.48C803.554 812.245 803.626 812.259 803.694 812.287C803.762 812.315 803.824 812.356 803.876 812.409C803.928 812.461 803.97 812.522 803.998 812.59C804.026 812.658 804.04 812.731 804.04 812.805V815.635H812.43V812.805C812.43 812.731 812.444 812.658 812.472 812.59C812.5 812.522 812.542 812.461 812.594 812.409C812.646 812.356 812.708 812.315 812.776 812.287C812.844 812.259 812.916 812.245 812.99 812.245H826.42C826.494 812.245 826.566 812.259 826.634 812.287C826.702 812.315 826.764 812.356 826.816 812.409C826.868 812.461 826.91 812.522 826.938 812.59C826.966 812.658 826.98 812.731 826.98 812.805V815.635H835.38V812.805C835.38 812.731 835.394 812.658 835.422 812.59C835.45 812.522 835.492 812.461 835.544 812.409C835.596 812.356 835.658 812.315 835.726 812.287C835.794 812.259 835.866 812.245 835.94 812.245H849.37C849.517 812.247 849.657 812.307 849.76 812.411C849.863 812.516 849.921 812.658 849.92 812.805V815.635H858.32V812.805C858.32 812.731 858.334 812.658 858.362 812.59C858.39 812.522 858.432 812.461 858.484 812.409C858.536 812.356 858.598 812.315 858.666 812.287C858.734 812.259 858.806 812.245 858.88 812.245H872.31C872.384 812.245 872.456 812.259 872.524 812.287C872.592 812.315 872.654 812.356 872.706 812.409C872.758 812.461 872.8 812.522 872.828 812.59C872.856 812.658 872.87 812.731 872.87 812.805V815.635H881.26V812.805C881.26 812.731 881.274 812.658 881.302 812.59C881.33 812.522 881.372 812.461 881.424 812.409C881.476 812.356 881.538 812.315 881.606 812.287C881.674 812.259 881.746 812.245 881.82 812.245H895.25C895.324 812.245 895.396 812.259 895.464 812.287C895.532 812.315 895.594 812.356 895.646 812.409C895.698 812.461 895.74 812.522 895.768 812.59C895.796 812.658 895.81 812.731 895.81 812.805V815.635H934.98C936.744 815.634 938.49 815.981 940.12 816.656C941.75 817.331 943.23 818.32 944.478 819.567C945.725 820.814 946.714 822.295 947.389 823.925C948.063 825.554 948.41 827.301 948.41 829.065V829.065Z"
+                  fill="#3F3D56"
+                />
+                <g id="code">
+                  <g id="Group">
+                    <path
+                      id="Vector_204"
+                      d="M718.892 669.701L716.452 669.058C716.138 668.957 715.829 668.988 715.528 669.152C715.226 669.316 715.023 669.563 714.918 669.891L700.242 718.783C700.137 719.111 700.17 719.421 700.341 719.711C700.511 720.001 700.766 720.197 701.108 720.298L703.547 720.942C703.862 721.044 704.17 721.012 704.472 720.847C704.774 720.683 704.977 720.437 705.082 720.109L719.758 671.217C719.862 670.888 719.83 670.579 719.659 670.288C719.489 669.998 719.234 669.802 718.892 669.701Z"
+                      fill="white"
+                    />
+                    <path
+                      id="Vector_205"
+                      d="M696.899 679.246C696.899 678.917 696.768 678.627 696.505 678.375L694.538 676.481C694.276 676.228 693.974 676.102 693.633 676.102C693.292 676.102 692.99 676.229 692.728 676.481L674.394 694.129C674.131 694.381 674 694.672 674 695C674 695.328 674.131 695.618 674.394 695.871L692.728 713.519C692.99 713.771 693.291 713.897 693.633 713.897C693.974 713.897 694.276 713.771 694.538 713.519L696.505 711.626C696.768 711.374 696.899 711.083 696.899 710.755C696.899 710.427 696.768 710.136 696.505 709.884L681.043 695L696.505 680.117C696.768 679.864 696.899 679.574 696.899 679.246Z"
+                      fill="white"
+                    />
+                    <path
+                      id="Vector_206"
+                      d="M745.607 694.128L727.272 676.48C727.01 676.228 726.708 676.101 726.367 676.101C726.026 676.101 725.725 676.228 725.462 676.48L723.495 678.374C723.233 678.626 723.102 678.917 723.102 679.245C723.102 679.574 723.233 679.864 723.495 680.116L738.958 695L723.495 709.884C723.233 710.136 723.102 710.427 723.102 710.755C723.102 711.083 723.233 711.374 723.495 711.626L725.462 713.519C725.725 713.771 726.026 713.897 726.367 713.897C726.708 713.897 727.01 713.771 727.272 713.519L745.607 695.871C745.869 695.619 746 695.328 746 694.999C746 694.671 745.869 694.381 745.607 694.128Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+              </g>
+              <g id="plant">
+                <path
+                  id="leaf-outline"
+                  d="M276.113 877.31L275.02 876.967C274.624 876.843 235.299 864.211 215.422 831.761C195.545 799.31 202.159 758.538 202.228 758.13L202.419 757L203.513 757.343C203.908 757.467 243.233 770.099 263.11 802.55C282.987 835 276.373 875.771 276.305 876.18L276.113 877.31ZM204.032 759.632C203.127 766.475 199.519 801.968 217.127 830.716C234.736 859.463 267.994 872.374 274.5 874.678C275.405 867.835 279.014 832.342 261.405 803.595C243.796 774.847 210.538 761.936 204.032 759.632H204.032Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  id="left-leaf"
+                  d="M274.506 876.281L273.373 876.102C272.964 876.037 232.215 869.286 207.811 840.087C183.407 810.888 183.994 769.588 184.002 769.174L184.027 768.028L185.159 768.207C185.568 768.272 226.317 775.024 250.721 804.223C275.125 833.422 274.538 874.722 274.53 875.136L274.506 876.281Z"
+                  fill="#87B242"
+                />
+                <path
+                  id="right-leaf"
+                  d="M288.379 803.072C268.468 835.579 275.318 876.013 275.318 876.013C275.318 876.013 314.451 863.744 334.362 831.238C354.273 798.732 347.422 758.297 347.422 758.297C347.422 758.297 308.29 770.566 288.379 803.072Z"
+                  fill="#3F3D56"
+                />
+              </g>
+              <g id="woolball">
+                <path
+                  id="Vector_207"
+                  opacity="0.5"
+                  d="M1180 893C1231.91 893 1274 850.915 1274 799C1274 747.085 1231.91 705 1180 705C1128.09 705 1086 747.085 1086 799C1086 850.915 1128.09 893 1180 893Z"
+                  fill="url(#paint1_linear)"
+                />
+                <path
+                  id="Vector_208"
+                  d="M1180 887C1228.6 887 1268 847.601 1268 799C1268 750.399 1228.6 711 1180 711C1131.4 711 1092 750.399 1092 799C1092 847.601 1131.4 887 1180 887Z"
+                  fill="#87B242"
+                />
+                <path
+                  id="Vector_209"
+                  opacity="0.2"
+                  d="M1162.76 779.943C1162.76 779.943 1171.4 798.254 1165.31 808.831"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_210"
+                  opacity="0.2"
+                  d="M1151.8 780.911C1151.8 780.911 1144.24 797.641 1150.37 810.151"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_211"
+                  opacity="0.2"
+                  d="M1201.52 775.515C1201.52 775.515 1211.54 786.677 1206.79 801.15"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_212"
+                  opacity="0.2"
+                  d="M1243.45 841.08C1243.45 841.08 1236.6 865.779 1222.39 864.022"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_213"
+                  opacity="0.2"
+                  d="M1124.88 828.465C1124.88 828.465 1119.96 840.946 1132.88 850.848"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_214"
+                  opacity="0.2"
+                  d="M1127.65 734.858C1127.65 734.858 1102.34 755.164 1102.7 793.281"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_215"
+                  opacity="0.2"
+                  d="M1150.02 840.299C1150.02 840.299 1168.8 859.721 1235.68 832.731"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_216"
+                  opacity="0.2"
+                  d="M1164.07 726.621C1164.07 726.621 1183.46 718.884 1197.38 728.698"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_217"
+                  opacity="0.2"
+                  d="M1212.88 722.309C1212.88 722.309 1246.34 737.423 1259.15 791.506"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_218"
+                  opacity="0.2"
+                  d="M1175.29 762.774C1175.29 762.774 1195.63 777.039 1189.19 817.764"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_219"
+                  opacity="0.2"
+                  d="M1130.71 814.899C1130.71 814.899 1120.01 784.724 1143.42 765.59"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_220"
+                  opacity="0.2"
+                  d="M1111.93 829.609C1111.93 829.609 1088.72 771.426 1164.51 731.602"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  id="Vector_221"
+                  opacity="0.2"
+                  d="M1189.57 736.917C1189.57 736.917 1238.63 741.116 1245.97 812.748"
+                  stroke="black"
+                  stroke-miterlimit="10"
+                />
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_d"
+                x="468.602"
+                y="278.847"
+                width="470.999"
+                height="541.553"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow"
+                  result="shape"
+                />
+              </filter>
+              <linearGradient
+                id="paint0_linear"
+                x1="706.099"
+                y1="548.464"
+                x2="709.515"
+                y2="528.758"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear"
+                x1="1188.27"
+                y1="892.636"
+                x2="1171.73"
+                y2="705.366"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#808080" stop-opacity="0.25" />
+                <stop
+                  offset="0.53514"
+                  stop-color="#808080"
+                  stop-opacity="0.12"
+                />
+                <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+              </linearGradient>
+              <clipPath id="clip0">
+                <rect
+                  width="1144"
+                  height="617.32"
+                  fill="white"
+                  transform="translate(201 74)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
-
-        <div class="part">
-          <h2>My goal and future plans</h2>
-          <p>
-            I've started learning HTML, CSS and JavaScript to make my blogging
-            more professional and I've felt in love with coding. I worked as a
-            biotechnologis but I needed a new direction and programming seems to
-            be a perfect choice for me. Now I'm focused on learning new skills
-            and it's an amazing journey! My dream job is to join biotechnology
-            knowledge and programming skills.
-          </p>
-        </div>
-
-        <div class="part">
-          <h2>Send me a message!</h2>
-          <p>
-            Tbh I don't know yet how to make this form sending data anywhere,
-            but at least I've practised writhing and styling it ;)
-          </p>
-          <!---<form action="tu wpisz url gdzie przesłać dane" -->
-          <form action="">
-            <label for="contact-name">Name:</label>
-            <input
-              type="text"
-              id="contact-name"
-              placeholder="Your name"
-            /><br />
-            <label for="contact-mail"
-              >E-mail:
-              <input
-                type="text"
-                id="contact-mail"
-                placeholder="name@mail.com"
-                minlength="6"
-                required /></label
-            ><br />
-            <fieldset>
-              <legend>Type of message:</legend>
-              <input
-                type="radio"
-                id="contact-compliments"
-                name="messagetype"
-                value="compliments"
-                checked
-              />
-              <label for="contact-compliments">Compliments</label>
-              <input
-                type="radio"
-                id="contact-tips"
-                name="messagetype"
-                value="helpful-tips"
-              />
-              <label for="contact-tips">Helpful tips</label>
-            </fieldset>
-            <label for="contact-date">Prefered meeting date:</label>
-            <input id="contact-date" name="date" type="date" />
-            <br />
-            <label for="contact-message">Message:</label><br />
-            <input
-              type="textarea"
-              name="message"
-              id="contact-message"
-              placeholder="Write me a message"
-              required
-              col="50"
-            /><br />
-            <label for="checkbox1"
-              ><input
-                id="checkbox1"
-                type="checkbox"
-                name="contact-rodo"
-                required
-              />I agree that Paulina Weiher may collect, use and disclose my
-              personal data which I have provided in this form, for providing
-              marketing materials.</label
-            >
-            <br />
-            <button type="submit">Send!</button>
-          </form>
-        </div>
-      </section>
-
-      <!--===================================================-->
-      <!--===================================================-->
-
-      <section class="code-playground">
-        <h2 class="title">Code playground</h2>
-
-        <div class="box">
-          <h3>Gradients and box-shadows excercise</h3>
-          <div class="gradientbox1"></div>
-          <div class="gradientbox2"></div>
-
-          <div class="rainbow-box">
-            <p>@theCieniu</p>
-          </div>
-
-          <h3>CSS heart ♥</h3>
-          <p>Heart code from Free Code Camp lesson. Next step: make it beat.</p>
-          <div class="heartp">
-            <div class="heart"></div>
-          </div>
-        </div>
-
-        <!--========= FIRST JAVASCRIPT TUTORIAL ==========================-->
-
-        <div class="box">
-          <h3>List 1</h3>
-          <p>
-            Youtube tutorial
-            <a
-              href="https://www.youtube.com/watch?v=zPHerhks2Vg&list=WL&index=280&t=0s"
-              target="_blank"
-              rel="nofollow"
-              >"JavaScript in Half an Hour (without jQuery!)"</a
-            >
-            by
-            <a
-              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
-              target="_blank"
-              rel="nofollow"
-              >LearnWebCode</a
-            >.
-          </p>
-          <h4 id="headline">Click a list item to replace this text.</h4>
-          <button id="list-button">Add new item</button>
-          <ul id="list-items">
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-            <li>Fourth item</li>
-            <li>Fifth item</li>
-          </ul>
-        </div>
-
-        <!--======== FIRST SUPERSIMPLE TODOLIST =======================-->
-
-        <div class="box">
-          <h3>List 2</h3>
-          <button id="js-test1">Click here!</button>
-          <p>
-            Youtube tutorials playlist
-            <a
-              href="https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs"
-              target="_blank"
-              rel="nofollow"
-              >"10 days with Java script"</a
-            >
-            by
-            <a
-              href="https://www.youtube.com/channel/UCHRp19HU7Y2LwfI0Ai6WAGQ"
-              target="_blank"
-              rel="nofollow"
-              >LearnWebCode</a
-            >. Video 10 - "To do app."
-          </p>
-
-          <div class="todoapp">
-            <h4>TO-DO app</h4>
-            <form id="todo-form">
-              <input
-                id="todo-input"
-                type="text"
-                placeholder="What I need to do..."
-                autocomplete="off"
-              />
-              <button id="submit">Create task</button>
-            </form>
-            <h4>Need to do:</h4>
-            <ul id="todo-list"></ul>
-          </div>
-        </div>
-
-        <!--========== RANDOM NUMBER GENERATOR ===================-->
-
-        <div class="box">
-          <h3>Random number generator</h3>
-          <form id="random">
-            <h4>Generate a random number within a range</h4>
-            <label>Range minimum <input id="range-min" /></label><br />
-            <label>Range maximum <input id="range-max" /></label><br />
-            <br /><button type="submit" name="submit" id="submit">
-              Sumbit!
-            </button>
-          </form>
-        </div>
-
-        <!--=========GUESS A NUMBER BORING GAME==========================-->
-
-        <div class="box">
-          <h3>Guess a number game</h3>
-          <form id="generateNumber">
-            <h4>Generate a number in a range</h4>
-            <label>from <input type="number" id="guess-min" /></label><br />
-            <label>to <input type="number" id="guess-max" /></label><br />
-            <button type="submit" id="submitRandom">Random!</button>
-
-            <div class="hiddenElement" id="guessForm">
-              <label>Your Guess <input id="numberGuessInput" /></label>
-              <button id="submitGuessButton">Check!</button>
-            </div>
-          </form>
-        </div>
-
-        <!--======== ANOTHER TO DO APP =========================-->
-
-        <div class="box">
-          <h3>Another to do app because why not</h3>
-          <h4>Number of tasks: <b id="an-item-number-display"></b></h4>
-          <ul id="another-list"></ul>
-          <form>
-            <input type="text" name="input" id="an-input" />
-            <button id="another-button" type="button" name="button">
-              Create task!
-            </button>
-          </form>
-        </div>
-
-        <!--===================================================-->
-
-        <div class="box">
-          <h3>CSS grid and JavaScript practice</h3>
-          <h4 id="grid-h">
-            Click the rectangle to discover things I like and I'm interested in
-            :)
-          </h4>
-          <div class="grid-practice">
-            <div class="grid-box" id="grid-art">
-              <img
-                src="grid-practice/art.JPG"
-                alt="venus milo with hands drawing in sketchbook"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-biotech">
-              <img
-                src="grid-practice/biotech.jpg"
-                alt="biotechnology laboratory - cosmetics ingredients samples"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-bulka">
-              <img
-                src="grid-practice/bulka.JPG"
-                alt="my cat Bułka sitting in the box on my desk"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-code">
-              <img
-                src="grid-practice/code.JPG"
-                alt="book about coding and being a programmer"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-dino">
-              <img
-                src="grid-practice/dinosaur.JPG"
-                alt="selfie with dinosaur in the museum"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-nails">
-              <img
-                src="grid-practice/nailart.JPG"
-                alt="nail art with swedish camuflage pattern"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-makeup">
-              <img
-                src="grid-practice/makeup.JPG"
-                alt="green and blue makeup eyeshadow palette"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-bunny">
-              <img
-                src="grid-practice/mufka.JPG"
-                alt="my bunny called Mufka"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-plant">
-              <img
-                src="grid-practice/plant.JPG"
-                alt="carnivore plant"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-food">
-              <img
-                src="grid-practice/ramen.JPG"
-                alt="ramen bowl"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-spanish">
-              <img
-                src="grid-practice/spanish.JPG"
-                alt="drawing sketchbook and spanish book"
-                class="grid-opacity grid-like"
-              />
-            </div>
-            <div class="grid-box" id="grid-witcher">
-              <img
-                src="grid-practice/witcher.JPG"
-                alt="sketchbook with witcher and coloured pencils"
-                class="grid-opacity grid-like"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--===================================================-->
-
-        <div class="box" id="storage">
-          <p>
-            I've watched a basic tutorial about local storage and now I'm trying
-            to use it by myself for the first time to get comfortable with code
-            involving local storage and understand it better. It's fun! :)
-          </p>
-          <h3>Local storage excercise</h3>
-          <form id="memorise" action="">
-            <label for="storage">Difficult English word to memorise:</label>
-            <br />
-            <input id="storage-input" type="text" placeholder="English word" />
-            <button>Memorise!</button>
-          </form>
-
-          <button id="remind">Remind me!</button>
-          <button id="clear-list">Clear list below</button>
-          <button id="clear-memory">Clear memory</button>
-          <ul id="words-list"></ul>
-        </div>
-
-        <!--===================================================-->
-
-        <div class="box">
-          <h3>Excercise</h3>
-        </div>
-
-        <!--===================================================-->
-
-        <div class="box">
-          <h3>Excercise</h3>
-        </div>
-
-        <!--===================================================-->
       </section>
     </main>
 
     <footer>
-      I don't serve any cookies, I'm on a diet. Paulina Weiher 2020
+      <p>
+        <a href="https://github.com/theCieniu/hello-world"
+          ><i class="fas fa-code"></i>this site's code</a
+        >
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/theCieniu"
+            target="_blank"
+            title="github profile @theCieniu"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/theCieniu"
+            target="_blank"
+            title="twitter profile @theCieniu"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/thecieniu/"
+            target="_blank"
+            title="instagram profile @theCieniu"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        I don't serve any cookies, I'm on a diet.
+        <a href="https://github.com/theCieniu" target="_blank"
+          >Paulina Weiher @theCieniu</a
+        >
+        &copy; 2020
+      </p>
     </footer>
 
     <script src="javascript-fun.js"></script>

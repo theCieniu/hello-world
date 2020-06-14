@@ -1,0 +1,179 @@
+$dark: #111;
+$medium: #666670;
+$light: #c3c3c3;
+$color1: #9cce40;
+$color1a: #87b242;
+$color2: #32c8b3;
+$color3: #c89819;
+$white: #fff;
+$whitish: #fffff5;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*======= GLOBAL STYLES ===========*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  color: $dark;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+main {
+  min-height: 85vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $dark;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:link:active,
+a:visited:active {
+  color: $color1a;
+}
+
+button {
+  background-color: $color1a;
+  color: $white;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem auto;
+  border: none;
+  border-radius: 2rem;
+  color: $white;
+  font-size: calc(1.5rem + 0.5vw);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $dark;
+  }
+}
+
+nav,
+footer,
+button,
+#code-nav {
+  a,
+  a:visited {
+    color: $white;
+  }
+
+  a:hover,
+  a:focus,
+  a:link:active,
+  a:visited:active {
+    color: $dark;
+  }
+}
+
+/*======= BURGER ===========*/
+
+.burger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  padding: 1rem 0.1rem 1rem 1rem;
+  cursor: pointer;
+  span {
+    display: block;
+    padding: 0.15rem 1.6rem;
+    margin: 0.6rem 0;
+    background-color: $white;
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    background-color: $color1a;
+  }
+}
+
+.b1 {
+  transform: rotateZ(45deg) translateY(230%);
+}
+
+/*.b2 {
+  opacity: 0;
+}*/
+
+.b3 {
+  transform: rotateZ(-45deg) translateY(-230%);
+}
+
+/*======= TYPOGRAPHY ===========*/
+h1 {
+  font-size: calc(2rem + 1vw);
+  font-family: "Norican", cursive;
+}
+
+h2 {
+  font-size: calc(2rem + 0.5vw);
+}
+
+h3 {
+  font-size: calc(2rem + 1vw);
+  margin: 2rem auto;
+}
+
+h4 {
+  font-size: calc(1.8rem + 0.5vw);
+}
+h5 {
+  font-size: calc(1.6rem + 0.5vw);
+}
+
+p {
+  margin: 2rem auto;
+}
+
+.disclaimer {
+  display: inline-block;
+  font-size: calc(1rem + 0.2vw);
+  padding: 2em;
+}
+.disclaimer-box {
+  @include flex(row, center, center);
+}
+
+input,
+textarea,
+fieldset {
+  font-size: calc(1.5rem + 0.5vw);
+  border: solid 2px $color1a;
+  background-color: $white;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
+@import "header";
+@import "home";
+@import "about";
+@import "code";
+@import "contact";
+@import "footer";
+@import "responsive";

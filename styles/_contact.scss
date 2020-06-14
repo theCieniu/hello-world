@@ -1,0 +1,20 @@
+#contact {
+  @include flex(column, center, center);
+  min-height: 85vh;
+  margin: 0 auto;
+  padding: 10vh 2rem;
+  max-width: 750px;
+  h2,
+  p {
+    text-align: center;
+  }
+  form {
+    margin: 4rem auto;
+    padding: 4rem 10%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.2);
+    @include flex(column, center, flex-start);
+    textarea {
+      width: 100%;
+    }
+  }
+}

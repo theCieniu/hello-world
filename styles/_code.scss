@@ -1,0 +1,259 @@
+/*============= NAVIGATION =================*/
+#code-submenu {
+  @include flex(row, flex-end, center);
+  width: 100%;
+  h2 {
+    margin: 2rem;
+  }
+  button {
+    margin: 2rem;
+  }
+  i {
+    margin: 0 1rem 0 0;
+  }
+}
+
+#code-nav {
+  background-color: $dark;
+  max-width: 60rem;
+  position: absolute;
+  top: 0;
+  left: -60rem;
+  min-height: 100vh;
+  z-index: 10;
+  padding: 5%;
+  transition: transform 0.5s ease-out;
+  ul {
+    @include flex(column, flex-start, flex-start);
+  }
+  li {
+    margin: 1rem auto;
+    a:hover {
+      color: $color1a;
+    }
+  }
+}
+
+.mobile-code-nav {
+  transform: translateX(60rem);
+}
+
+.hiddenElement {
+  visibility: hidden;
+}
+
+/*============= CODE PLAYGROUND =================*/
+
+#playground {
+  margin: 4rem 5vw;
+  display: grid;
+  grid-gap: 5vw;
+  grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.code-box {
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bigger-code-box {
+}
+
+/* ========== LOCAL STORAGE =============== */
+#clear-list,
+#clear-memory {
+  background-color: white;
+  color: black;
+  &:hover {
+    background-color: $color1a;
+    color: white;
+  }
+}
+
+/*============= GRID =================*/
+
+#grid-art {
+  grid-area: art;
+}
+
+#grid-biotech {
+  grid-area: biotech;
+}
+
+#grid-bulka {
+  grid-area: bulka;
+}
+
+#grid-code {
+  grid-area: code;
+}
+
+#grid-dino {
+  grid-area: dino;
+}
+
+#grid-makeup {
+  grid-area: makeup;
+}
+
+#grid-bunny {
+  grid-area: bunny;
+}
+
+#grid-nails {
+  grid-area: nails;
+}
+
+#grid-plant {
+  grid-area: plant;
+}
+
+#grid-food {
+  grid-area: food;
+}
+
+#grid-spanish {
+  grid-area: spanish;
+}
+
+#grid-witcher {
+  grid-area: witcher;
+}
+
+.grid-practice {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "art biotech bulka bulka "
+    "code dino bulka bulka "
+    "nails makeup bunny plant"
+    " nails food spanish witcher";
+  margin: 2rem auto;
+  grid-gap: 0.2rem;
+  img {
+    max-width: 100%;
+  }
+}
+
+.grid-box {
+  background: $color1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.grid-box:hover {
+  background: url("../code/grid-practice/question.svg") $color1a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-opacity {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* ======= LIST - JAVASCRIPT IN HALF AN HOUR ==== */
+.highlight {
+  background-color: yellow;
+}
+
+/* ======== Gradients, box-shadows, position-absolute/relative, animation =========== */
+.colorful-elements {
+  @include flex(column, space-around, center);
+}
+
+.gradientbox1,
+.gradientbox2 {
+  width: 80%;
+  margin: 2rem;
+  height: 10rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in;
+}
+
+.gradientbox1 {
+  background: repeating-linear-gradient(
+    45deg,
+    yellow 0,
+    cyan 4rem,
+    magenta 8rem,
+    yellow 11rem
+  );
+  &:hover {
+    transform: skewY(-5deg);
+  }
+}
+
+.gradientbox2 {
+  background: repeating-linear-gradient(
+    90deg,
+    black 0px,
+    black 20px,
+    white 20px,
+    white 40px
+  );
+  &:hover {
+    transform: skewX(45deg);
+  }
+}
+
+.rainbow-box {
+  width: 15rem;
+  height: 15rem;
+  margin: 15rem auto;
+  @include flex(row, center, center);
+  border-radius: 50%;
+  font-family: "Norican", cursive;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.8),
+    0px -30px 120px 10px rgba(255, 255, 0, 0.5),
+    30px 0px 120px 10px rgba(0, 255, 0, 0.4),
+    0px 30px 120px 10px rgba(0, 0, 255, 0.8),
+    -30px 0px 120px 10px rgba(255, 0, 0, 0.8);
+}
+
+/* ===================== HEART ========================= */
+.heart-box {
+  position: relative;
+  padding: 4rem;
+  border: solid 1px $medium;
+  margin: 0rem auto 6rem;
+}
+
+.heart {
+  position: absolute;
+  background-color: red;
+  margin: 0 auto;
+  height: 6rem;
+  width: 6rem;
+  transform: rotate(-45deg);
+  animation: heartbeat 1.5s ease-in infinite alternate;
+  &::after,
+  &::before {
+    background-color: red;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+  }
+  &::before {
+    top: -3rem;
+  }
+  &::after {
+    left: 3rem;
+  }
+}
+
+@keyframes heartbeat {
+  to {
+    transform: scale(1.3) rotate(-45deg);
+  }
+}

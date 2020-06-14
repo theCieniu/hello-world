@@ -1,0 +1,39 @@
+/*======= MEDIA QUERY ===========*/
+@media (max-width: 779px) {
+  /*======= ================= ===========*/
+  nav {
+    justify-content: center;
+    ul {
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        margin: 1rem 0 1rem 1rem;
+      }
+    }
+  }
+
+  .code-box {
+    max-width: 90vw;
+    margin: 1rem;
+  }
+
+  footer {
+    @include flex(column, center, center);
+    text-align: center;
+  }
+
+  .intro-img {
+    max-height: 100vw;
+    @include flex(row, center, center);
+  }
+
+  /*======= ================== ===========*/
+}
+
+@media (max-width: 900px) {
+  /*======= ================= ===========*/
+  #about {
+    flex-direction: column;
+  }
+  /*======= ================== ===========*/
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Front-end project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Norican&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <meta name="author" content="Paulina Weiher" />
+    <meta
+      name="keywords"
+      content="paulina weiher front-end web developer project portfolio"
+    />
+    <meta
+      name="description"
+      content="Front-end project with html, css and javascript for web developer portfolio by Paulina Weiher"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Code playground</h1>
+        <ul class="wrap-row">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../code/">Code</a>
+          </li>
+          <li>
+            <a href="../about/">About</a>
+          </li>
+          <li>
+            <a id="selected" href="./contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact">
+        <h2>Send me a message!</h2>
+        <p>
+          Tbh I don't know yet how to make this form sending data anywhere, but
+          at least I've practised writhing and styling it ;)
+        </p>
+        <!---<form action="tu wpisz url gdzie przesłać dane" -->
+        <form action="">
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" placeholder="Your name" />
+          <label for="contact-mail">E-mail:</label>
+          <input
+            type="text"
+            id="contact-mail"
+            placeholder="name@mail.com"
+            minlength="6"
+            required
+          />
+          <fieldset>
+            <legend>Type of message:</legend>
+            <input
+              type="radio"
+              id="contact-compliments"
+              name="messagetype"
+              value="compliments"
+              checked
+            />
+            <label for="contact-compliments">Compliments</label>
+            <input
+              type="radio"
+              id="contact-tips"
+              name="messagetype"
+              value="helpful-tips"
+            />
+            <label for="contact-tips">Helpful tips</label>
+          </fieldset>
+          <label for="contact-date">Prefered meeting date:</label>
+          <input id="contact-date" name="date" type="date" />
+
+          <label for="contact-message">Message:</label>
+          <textarea
+            type="message"
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <label class="disclaimer-box" for="checkbox1"
+            ><input
+              id="checkbox1"
+              type="checkbox"
+              name="contact-rodo"
+              required
+            />
+            <span class="disclaimer">
+              I agree that Paulina Weiher may collect, use and disclose my
+              personal data which I have provided in this form, for providing
+              marketing materials.</span
+            >
+          </label>
+
+          <button type="submit">Send!</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://github.com/theCieniu/hello-world"
+          ><i class="fas fa-code"></i>this site's code</a
+        >
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/theCieniu"
+            target="_blank"
+            title="github profile @theCieniu"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/theCieniu"
+            target="_blank"
+            title="twitter profile @theCieniu"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/thecieniu/"
+            target="_blank"
+            title="instagram profile @theCieniu"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        I don't serve any cookies, I'm on a diet.
+        <a href="https://github.com/theCieniu" target="_blank"
+          >Paulina Weiher @theCieniu</a
+        >
+        &copy; 2020
+      </p>
+    </footer>
+
+    <script src="../javascript.js"></script>
+  </body>
+</html>
