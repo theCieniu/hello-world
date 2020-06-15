@@ -676,6 +676,10 @@ nav ul li {
 }
 
 /*============= ARRAYS AND OBJECTS =================*/
+#js-array-object button {
+  margin: 1rem;
+}
+
 #js-array-object div {
   margin: 1rem;
   padding: 1rem;
