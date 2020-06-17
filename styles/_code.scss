@@ -58,11 +58,29 @@
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
-.bigger-code-box {
+.note {
+  background-color: $color1a;
+  color: white;
+  padding: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+  button,
+  button a {
+    background-color: white;
+    color: $dark;
+    transition: all 0.3s;
+    &:hover {
+      color: $color1a;
+    }
+  }
 }
 
 /*============= ARRAYS AND OBJECTS =================*/
-#js-array-object {
+
+#js-objects {
+}
+
+#js-arrays {
   button {
     margin: 1rem;
   }

@@ -675,19 +675,40 @@ nav ul li {
           box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
+.note {
+  background-color: #87b242;
+  color: white;
+  padding: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.note button,
+.note button a {
+  background-color: white;
+  color: #111;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.note button:hover,
+.note button a:hover {
+  color: #87b242;
+}
+
 /*============= ARRAYS AND OBJECTS =================*/
-#js-array-object button {
+#js-arrays button {
   margin: 1rem;
 }
 
-#js-array-object div {
+#js-arrays div {
   margin: 1rem;
   padding: 1rem;
   border: solid 1px #87b242;
   border-radius: 1rem;
 }
 
-#js-array-object div ol {
+#js-arrays div ol {
   padding-left: 2rem;
 }
 

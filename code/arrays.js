@@ -20,6 +20,11 @@ let alpinists = [
   //"Wanda Anonimowa",
 ];
 
+let alpinistsCopy = [...alpinists];
+alpinistsCopy.sort();
+cl("Alpinists: " + alpinists);
+cl("(copy) Alpinists: " + alpinistsCopy);
+
 let parentElementAlpinists = document.querySelector("#alpinists span");
 let filterAlpinistsPolishBtn = document.querySelector(
   "#alpinists button.polish"
@@ -54,6 +59,7 @@ filterAlpinistsAllBtn.addEventListener("click", () => {
 });
 
 // ========== SOTING SUMMITS =====================
+
 let summits = [
   { name: "Lhotse", elevation: 8516 },
   { name: "Everest", elevation: 8848 },
@@ -94,9 +100,6 @@ sortSummitsBtnHigh.addEventListener("click", () => {
 
 /* ===== JUST SOME NOTES FOR MYSELF =====
 
-let polishAlpinists = alpinists.filter((name) => name.includes("PL"));
-//cl("(filter) Polish alpinists: " + polishAlpinists);
-
 //===== SOME AND EVERY ==============
 every returns true or false - are every item fullfiling the condition? 
 good tool to check if everyting is ok with an array, 
@@ -116,7 +119,4 @@ let visitor = "alpinist";
 let isVisitorAlpinist =
   visitor == "alpinist" ? "You are an alpinist" : "You are not an alpinist";
 //cl(isVisitorAlpinist);
-
-// SORTING
-alpinists.sort();
-//cl("(sort) Sorted by alphabet: " + alpinists); */
+ */
