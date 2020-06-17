@@ -22,8 +22,8 @@ let alpinists = [
 
 let alpinistsCopy = [...alpinists];
 alpinistsCopy.sort();
-cl("Alpinists: " + alpinists);
-cl("(copy) Alpinists: " + alpinistsCopy);
+//cl("Alpinists: " + alpinists);
+//cl("(copy) Alpinists: " + alpinistsCopy);
 
 let parentElementAlpinists = document.querySelector("#alpinists span");
 let filterAlpinistsPolishBtn = document.querySelector(
